@@ -20,6 +20,19 @@
 
     .bg-login00 {
         background-image: url(assets/img/bg-login00.svg);
+        background-repeat: space;
+    }
+
+    .border-login-1 {
+        border: #4ee44e solid 1px;
+    }
+
+    .border-login-2 {
+        border: #ff0000 solid 1px;
+    }
+
+    .border-login-3 {
+        border: #48b4e0 solid 1px;
     }
 
     </style>
@@ -37,38 +50,38 @@
 
             <div class="row">
 
-                <div class="col-6 py-4">
+                <div class="col-12 col-lg-6 py-4">
 
-                    <div class="w-75 rounded py-5 px-4 mx-auto border border-success border-3" style="background-color: #A7AAF9;">
+                    <div class="w-lg-75 rounded py-5 px-4 mx-lg-auto border border-success border-3" style="background-color: #A7AAF9;">
                     
                     <div class="mb-5 text-center">
-                        <h5 class="d-inline-flex bg-white px-5 py-1 rounded border border-success border-2">CADASTRE-SE</h5>
+                        <h5 class="d-inline-flex bg-white px-4 px-lg-5 py-1 rounded border border-warning border-2 fs-6 fw-bold">CADASTRE-SE</h5>
                     </div>
 
                     <form action="#" method="post">
 
                         <div class="mb-3">
-                            <label for="nome1" class="form-label">Nome de usuario*</label>
-                            <input type="text" id="nome1" class="form-control">
+                            <label for="nome1" class="form-label fw-bold">Nome de usuario*</label>
+                            <input type="text" id="nome1" class="form-control border border-warning">
                         </div>
 
                         <div class="mb-3">
-                            <label for="email1" class="form-label">Email*</label>
-                            <input type="email" id="email1" class="form-control">
+                            <label for="email1" class="form-label fw-bold">Email*</label>
+                            <input type="email" id="email1" class="form-control border-warning">
                         </div>
 
                         <div class="mb-3">
-                            <label for="pass1" class="form-label">Senha*</label>
-                            <input type="password" id="pass1" class="form-control">
+                            <label for="pass1" class="form-label fw-bold">Senha*</label>
+                            <input type="password" id="pass1" class="form-control border-warning">
                         </div>
 
                         <div class="mb-3">
-                            <label for="pass1" class="form-label">Confirme a Senha*</label>
-                            <input type="password" id="pass1" class="form-control">
+                            <label for="pass1" class="form-label fw-bold">Confirme a Senha*</label>
+                            <input type="password" id="pass1" class="form-control border-warning">
                         </div>
 
                         <div class="mb-3 pt-5 text-center">
-                            <input type="submit" id="comfirmar" class="btn btn-success" value="CADASTRAR">
+                            <input type="submit" id="comfirmar" class="btn btn-success border border-warning" value="CADASTRAR">
                         </div>
 
                     </form>
@@ -77,7 +90,7 @@
 
                 </div>
 
-                <div class="col-6 text-center align-self-center">
+                <div class="col-6 text-center align-self-center d-none d-lg-block">
                     <img src="assets/img/Logo_paisFilhos.svg" class="w-75" alt="">
                 </div>
                 
