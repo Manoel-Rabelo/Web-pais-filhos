@@ -7867,6 +7867,67 @@ textarea.form-control-lg {
   background-image: var(--bs-gradient) !important;
 }
 
+.bg-tr {
+  background-position: top right;
+}
+
+.bg-tc {
+  background-position: top center;
+}
+
+.bg-tl {
+  background-position: top left;
+}
+
+.bg-cr {
+  background-position: center right;
+}
+
+.bg-cc {
+  background-position: center center;
+}
+
+.bg-cl {
+  background-position: center left;
+}
+
+.bg-br {
+  background-position: bottom right;
+}
+
+.bg-bc {
+  background-position: bottom center;
+}
+
+.bg-bl {
+  background-position: bottom left;
+}
+
+.bg-1 {
+  background-size: 10rem;
+}
+
+.bg-2 {
+  background-size: 20rem;
+}
+
+.bg-3 {
+  background-size: 30rem;
+}
+
+.bg-4 {
+  background-size: 40rem;
+}
+
+.bg-5 {
+  background-size: 50rem;
+}
+
+.bg-6 {
+  background-size: 60rem;
+}
+
+
 .user-select-all {
   -webkit-user-select: all !important;
   -moz-user-select: all !important;

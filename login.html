@@ -12,9 +12,14 @@
     .bg-login{
         background-image: url(assets/img/bg-login1.svg);
         background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        
+    }
+
+    .bg-fundo {
+        background-color: #FFFFEE;
+    }
+
+    .bg-login00 {
+        background-image: url(assets/img/bg-login00.svg);
     }
 
     </style>
@@ -23,27 +28,27 @@
 
 <body>
 
-    <section>
+    <div class="container-fluid bg-fundo bg-login00">
 
-        <div class="container-fluid">
+        <section>
 
             <!--Corpo do form-->
-            <div class="container p-5 py-75">
+            <div class="container py-5">
 
             <div class="row">
 
-                <div class="col-6 p-5 bg-login">
+                <div class="col-6 py-4">
 
-                    <div class="w-75 bg-light rounded p-5 mx-auto">
+                    <div class="w-75 rounded py-5 px-4 mx-auto border border-success border-3" style="background-color: #A7AAF9;">
                     
                     <div class="mb-5 text-center">
-                        <h5>CADASTRE-SE</h5>
+                        <h5 class="d-inline-flex bg-white px-5 py-1 rounded border border-success border-2">CADASTRE-SE</h5>
                     </div>
 
                     <form action="#" method="post">
 
                         <div class="mb-3">
-                            <label for="nome1" class="form-label">Nome dusuario*</label>
+                            <label for="nome1" class="form-label">Nome de usuario*</label>
                             <input type="text" id="nome1" class="form-control">
                         </div>
 
@@ -73,16 +78,40 @@
                 </div>
 
                 <div class="col-6 text-center align-self-center">
-                    <img src="assets/img/Logo_paisFilhos.svg" class="w-50" alt="">
+                    <img src="assets/img/Logo_paisFilhos.svg" class="w-75" alt="">
                 </div>
                 
             </div>
 
             </div>
 
+        </section>
+
+    </div>
+
+    <footer>
+
+        <div class="container-fluid border-top border-dark border-3 bg-light">
+
+            <div class="container">
+
+                <div class="row pt-3">
+                    <div class="col-12 text-center">
+                        <h5>Tabajara Tech Inc.</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="lead">Todos os Direitos reservados</h3>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-    </section>
+    </footer>
     
 </body>
 </html>
