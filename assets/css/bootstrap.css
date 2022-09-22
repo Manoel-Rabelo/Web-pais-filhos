@@ -11324,4 +11324,23 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
+ /* CSS PROJETO PI */
+body {
+  background-color: #A7DCE0;
+}
+
+.bg-licao2{
+  position: absolute;
+  width: 1440px;
+  height: 798px;
+  left: 0px;
+  top: 0px;
+  background: url(../../assets/img/bg-licao2.png)no-repeat;
+  
+  
+}
+.corpo-robo{
+  width: 882px; 
+  height: 803px;
+}
+ /*# sourceMappingURL=bootstrap.css.map */
