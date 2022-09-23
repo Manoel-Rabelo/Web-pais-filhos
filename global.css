@@ -1,0 +1,9 @@
+
+*{
+box-sizing: border-box;/*Propriedade que mantem a margin e o paddind dentro dos limites informados (whidth e Heigth)*/
+margin: 0px;
+}
+
+html, body{
+height: 100%;/*Comando para colocar o rodapé no final da página*/
+}
