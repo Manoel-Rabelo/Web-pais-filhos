@@ -24,75 +24,119 @@
     <script src="/assets/js/bootstrap.js"></script>
     
 
-    <div class="row gx-0">
+    <div class="row gs-0">
 
-        <div class="col-2 bg-primary">
+        <div class="col-3 col-lg-2 bg-primary">
 
-            <div class="">
+            <div class="text-center">
                 <a class="" href="#">
-                    <img src="/assets/img/Logo_paisFilhos_pequena.svg" class="img-fluid p-2" alt="" width="120">
+                    <img src="/assets/img/Logo_paisFilhos_pequena.svg" class="img-fluid p-2 d-block w-100 py-3" alt="">
                 </a>
             </div>
+        </div>
 
-            <ul class="flex-column" style="height: 100vh; list-style: none;">
+        <div class="col-9 col-lg-10 bg-primary">
 
-                <li class="botao">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="it1 it2 it3 it4 it5 it6"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-bar-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
-                      </svg></button>
-                </li>
+            <div class="row d-flex flex-row justify-content-lg-end justify-content-center py-2 ">
 
-                <li class="align-self-center collapse multi-collapse" id="it1">
-                    <div class="fotoPerfil bg-light rounded-circle mt-4" style="height: 6rem; width: 6rem;">
+                <div class="col-2 px-0">
+                    <div class="bVoltar btn text-white py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg></div>
+                </div>
+
+                <div class="col-6 px-0 text-center py-2">
+                    <div class="pagAtual px-lg-3"><p class="mb-0 py-lg-2 fs-6">Pagina Principal</p></div>
+                </div>
+
+                <div class="col-2 px-0">
+                    <div class="bVoltarTudo btn text-white py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+            <div class="row">
+
+            <div class="col-2 bg-primary">
+
+            <ul class="flex-column mx-0 px-1 pt-3" style="height: 100vh; list-style: none;">
+
+                <li class="" id="it1">
+                    <div>
+
+                        <button class="btn btn-secondary px-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                          </svg>
+                        </button>
+
+                    </div>
+
+                    <div class="fotoPerfil bg-light rounded-circle mt-4 d-none d-lg-block" style="height: 6rem; width: 6rem;">
                     </div>
                 </li>
  
-                <li class="align-self-center collapse multi-collapse" id="it2">
-                    <div class="d-flex nomePerfil mt-4 bg-light rounded-pill px-4" style="max-height: 30px;">
+                <li class="align-self-center" id="it2">
+                    <div class="d-flex nomePerfil mt-4 bg-light rounded-pill px-4 d-none d-lg-block" style="max-height: 30px;">
                         <p class="mb-0">Tabajara</p>
                     </div>
                 </li>
 
-                <li class="align-self-center collapse multi-collapse" id="it3">
-                    <div class="emailPerfil mt-4 bg-light rounded-pill px-4" style="max-height: 30px;">
+                <li class="align-self-center" id="it3">
+                    <div class="emailPerfil mt-4 bg-light rounded-pill px-4 d-none d-lg-block" style="max-height: 30px;">
                         <p class="mb-0">tabajara.tech@gmail.com</p>
                     </div>
                 </li>
 
-                <li class="align-self-center collapse multi-collapse" id="it4">
-                    <div class="perfil mt-4 rounded-3 px-4 btn btn-secondary w-75 " style="max-height: 40px;">
+                <li class="align-self-center" id="it4">
+                    <div class="perfil mt-4 rounded-3 px-4 btn btn-secondary w-75 d-none d-lg-block" style="max-height: 40px;">
                         <p class="mb-0">Perfil</p>
                     </div>
                 </li>
 
-                <li class="align-self-center collapse multi-collapse" id="it5">
-                    <div class="addFilho mt-4 rounded-3 px-4 btn btn-secondary w-75" style="max-height: 40px;">
+                <li class="align-self-center" id="it5">
+
+                    <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </div>
+
+                    <div class="addFilho mt-4 rounded-3 px-4 btn btn-secondary w-75 d-none d-lg-block" style="max-height: 40px;">
                         <p class="mb-0">+ Filho</p>
                     </div>
                 </li>
 
-                <li class="nav-item align-self-center collapse multi-collapse" id="it6">
-                    <div class="jogar mt-4 rounded-3 px-4 btn btn-secondary w-75" style="max-height: 40px;">
+                <li class="nav-item align-self-center" id="it6">
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                          </svg>
+                    </div>
+
+                    <div class="jogar mt-4 rounded-3 px-4 btn btn-secondary w-75 d-none d-lg-block" style="max-height: 40px;">
                         <p class="mb-0">Jogar</p>
                     </div>
                 </li>
 
             </ul>
 
+            </div>
+
+            </div>
+
         </div>
 
-        <div class="col-10">
-
-            <div class="d-flex flex-row justify-content-end py-2 bg-primary pe-5">
-                <div class="bVoltar btn text-white py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-                  </svg></div>
-                <div class="pagAtual px-3"><p class="mb-0 py-2">Pagina Principal</p></div>
-                <div class="bVoltarTudo btn text-white py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg></div>
-            </div>
 
             <div class="d-flex row justify-content-center my-3 mx-1 mx-lg-0">
 

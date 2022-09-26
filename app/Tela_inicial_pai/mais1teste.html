@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+</head>
+
+<style>
+
+@charset "UTF-8";
+*, html, body {
+	margin:0;
+	padding:0;
+	}
+
+/* regra para o box-sizing */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* regra para o clear float */
+.cf:before,
+.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+body {
+	margin-left:55px; /* espaço à esquerda para a barra vertical vísivel do menu */
+	font:  62.5%/1.2 Verdana, Helvetica, Arial, sans-serif;
+	}
+
+    #lateral {
+	padding:0 50px 0 0;
+	-moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+	font-size:1.2em; /*trocar*/
+	background:rgb(44,62,80); /*trocar*/
+	height:100%;
+	overflow:hidden;
+	width:25rem; /*trocar*/
+	position:fixed;
+	top:0;
+	left:-320px;
+	}
+#lateral:before {
+	z-index:1000;
+	content: url(icone-menu.png);
+	font-size:4em;
+	color:white;
+	position:fixed;
+	left:4px;
+	top:45px;
+	}
+    
+#lateral:hover:before, #lateral:focus:before {
+left:-500px
+	}
+#lateral:hover, #lateral:focus,  #lateral:active  {
+	overflow-y:scroll;
+	-moz-transform: translate(320px, 0);
+		-webkit-transform: translate(320px, 0);
+			-o-transform: translate(320px, 0);
+				transform: translate(320px, 0);
+	padding-right:0;
+	}	
+
+</style>
+
+<body class="bg-white">
+
+    <div id="lateral" onclick="aparecer()">
+        <div id="menu">
+                      
+        <h3 class="link-titulo">Destaques</h3>
+          <ul class="box">					
+            <li><a href="#">FAQ - CSS</a></li>
+            <li><a href="#">QUIZ - CSS</a></li>
+            <li ><a href="#">Editor CSS do DWMX 2004</a></li>
+            <li ><a href="#">Aprenda CSS desde o início</a></li>
+          </ul>
+        
+        <h3 class="link-titulo">Fundamentos CSS</h3>
+          <ul class="box">
+            <li><a href="#">Introdução às CSS</a></li>
+            <li><a href="#">Sintaxe CSS</a></li>
+              <!-- mais links -->
+          </ul>
+        
+        <h3 class="link-titulo">CSS em ação</h3>
+          <ul class="box">					
+            <li><a href="#">Font interativo</a></li> 			
+            <li><a href="#">Text interativo</a></li> 			
+            <!-- mais links -->
+          </ul>
+        
+        <h3 class="link-titulo">Efeitos CSS gerais</h3>
+          <ul class="box">
+            <li><a href="#">Sombras em textos 1 (desatualizado)</a></li>
+            <li><a href="#">Sombras em textos 2 (desatualizado)</a></li>
+            <!-- mais links -->
+          </ul>
+            
+        <!-- mais seções -->
+        
+        </div> <!-- /#menu -->
+        </div id="link"> <!-- vazio --> <div>
+        </div> <!-- /#lateral -->
+
+</body>
+
+</html>
