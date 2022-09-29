@@ -9,9 +9,82 @@
 
     <style>
 
-        .perfil, .jogar, .addFilho{
-            border-block: solid 0px;
+        body {
+            background-color: white;
         }
+
+        /* Regras logo */
+        .logo{
+            min-width: 90px;
+            min-height: 75px;
+        }
+
+        .logo {
+            max-width: 15%;
+        }
+        /* Fim */
+
+
+        /* Esconder para telas peguenas */
+        .esconderP {
+            display: none;
+        }
+
+        @media (min-width: 992px) {
+            .esconderP{
+                display: block;
+            }
+        }
+        /* Fim */
+
+        /* Esconder para telas grandes */
+        .esconderG {
+            display: block;
+        }
+
+        @media (min-width: 992px) {
+            .esconderG{
+                display: none;
+            }
+        }
+        /* Fim */
+
+        /* Regras botão do card para telas pequenas */
+        @media (max-width: 992px) {
+            .botaocardP {
+                width: 100%;
+            }
+        }
+        /* Fim */
+
+        /* Regras tamanho do botão telas grandes */
+        @media (min-width: 992px){
+            .botaocardG {
+                max-width: 18rem;
+            }
+        }
+        /* Fim */
+
+        /* Fonte do card size para telas pequenas */
+        @media (max-width: 992px){
+            .fs-cardP{
+                font-size: 1rem;
+            }
+        }
+        /* Fim */
+
+        /* Regras de collapse da barra lateral */
+            .collapsed {
+                display: none;
+            }
+
+            @media (min-width: 992px) {
+                .collapsed {
+                    display: block;
+                }
+            }
+        /* Fim */
+
 
     </style>
 
@@ -24,195 +97,249 @@
     <script src="/assets/js/bootstrap.js"></script>
     
 
-    <div class="row gs-0">
+    <header class="barraSup">
 
-        <div class="col-3 col-lg-2 bg-primary">
+        <div class="row bg-light">
 
-            <div class="text-center">
-                <a class="" href="#">
-                    <img src="/assets/img/Logo_paisFilhos_pequena.svg" class="img-fluid p-2 d-block w-100 py-3" alt="">
-                </a>
-            </div>
-        </div>
+            <!-- Botão de menu -->
+            <div class="col-4 d-block d-lg-none text-center align-self-center">
 
-        <div class="col-9 col-lg-10 bg-primary">
-
-            <div class="row d-flex flex-row justify-content-lg-end justify-content-center py-2 ">
-
-                <div class="col-2 px-0">
-                    <div class="bVoltar btn text-white py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-                      </svg></div>
-                </div>
-
-                <div class="col-6 px-0 text-center py-2">
-                    <div class="pagAtual px-lg-3"><p class="mb-0 py-lg-2 fs-6">Pagina Principal</p></div>
-                </div>
-
-                <div class="col-2 px-0">
-                    <div class="bVoltarTudo btn text-white py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                      </svg></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-            <div class="row">
-
-            <div class="col-2 bg-primary">
-
-            <ul class="flex-column mx-0 px-1 pt-3" style="height: 100vh; list-style: none;">
-
-                <li class="" id="it1">
-                    <div>
-
-                        <button class="btn btn-secondary px-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                <button type="button" class="btn btn-secondary">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                           </svg>
+                    </span>
+                </button>
+
+            </div>
+
+            <!-- Logo -->
+            <div class="col-8 col-lg-3 text-lg-center">
+                <img src="/assets/img/Logo_paisFilhos_pequena.svg" class="logo img-fluid" alt="">
+            </div>
+
+            <!-- paginação tela grande -->
+            <div class="col-9 d-none d-lg-block">
+
+                <div class="row justify-content-end pe-lg-5 py-lg-3">
+
+                    <div class="col-6 btn-group" role="group">
+
+                        <button class="btn btn-secondary">
+                            <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </span>
+                        </button>
+
+                        <button class="btn btn-secondary" disabled style="opacity: 1;">Página principal</button>
+
+                        <button class="btn btn-secondary">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
                         </button>
 
                     </div>
 
-                    <div class="fotoPerfil bg-light rounded-circle mt-4 d-none d-lg-block" style="height: 6rem; width: 6rem;">
-                    </div>
-                </li>
- 
-                <li class="align-self-center" id="it2">
-                    <div class="d-flex nomePerfil mt-4 bg-light rounded-pill px-4 d-none d-lg-block" style="max-height: 30px;">
-                        <p class="mb-0">Tabajara</p>
-                    </div>
-                </li>
-
-                <li class="align-self-center" id="it3">
-                    <div class="emailPerfil mt-4 bg-light rounded-pill px-4 d-none d-lg-block" style="max-height: 30px;">
-                        <p class="mb-0">tabajara.tech@gmail.com</p>
-                    </div>
-                </li>
-
-                <li class="align-self-center" id="it4">
-                    <div class="perfil mt-4 rounded-3 px-4 btn btn-secondary w-75 d-none d-lg-block" style="max-height: 40px;">
-                        <p class="mb-0">Perfil</p>
-                    </div>
-                </li>
-
-                <li class="align-self-center" id="it5">
-
-                    <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
-                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                      </svg>
-                    </div>
-
-                    <div class="addFilho mt-4 rounded-3 px-4 btn btn-secondary w-75 d-none d-lg-block" style="max-height: 40px;">
-                        <p class="mb-0">+ Filho</p>
-                    </div>
-                </li>
-
-                <li class="nav-item align-self-center" id="it6">
-
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                          </svg>
-                    </div>
-
-                    <div class="jogar mt-4 rounded-3 px-4 btn btn-secondary w-75 d-none d-lg-block" style="max-height: 40px;">
-                        <p class="mb-0">Jogar</p>
-                    </div>
-                </li>
-
-            </ul>
-
-            </div>
+                </div>
 
             </div>
 
         </div>
 
+    </header>
 
-            <div class="d-flex row justify-content-center my-3 mx-1 mx-lg-0">
+    <section class="main-content">
 
+        <div class="row">
 
-                <div class="col-12 col-lg-3">
-                    <div class="criarLicao btn bg-warning w-100 w-lg-50 h-100 mx-auto d-flex flex-column" style="border-radius: 1rem;">
-                        <p class="text-center pb-1 fs-lg-5 fs-6 mb-auto">CRIAR <br class="d-none d-lg-block">LIÇÕES</p>
+            <!-- Barra Lateral -->
+            <div class="col-lg-3">
+                
+                <div class="row">
 
-                        <div class="d-none d-lg-block ptb">
-                            <hr class="mb-0">
-                            <p class="pt-0">Criar atividades</p>
+                    <div class="col-12 bg-light" style="height: 100vh;">
+
+                        <div class="row d-flex flex-column">
+
+                            <div class="img-perfil bg-warning rounded-circle mt-3 align-self-center" style="height: 6rem; width: 6rem;">
+            
+                            </div>
+
+                            <div class="nome-user bg-white mt-3 align-self-center w-75 rounded-3 border border-dark">
+                                <p class="py-2 px-4 mb-0 text-center">Tabajara</p>
+                            </div>
+
+                            <div class="email-user bg-white mt-3 align-self-center w-75 rounded-3 border border-dark">
+                                <p class=" py-2 px-4 mb-0 text-center">tabajara.tech@gmail.com</p>
+                            </div>
+
+                            <div class="config-perfil mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">Perfil</button>
+                            </div>
+
+                            <div class="add-filho mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">+ Filho</button>
+                            </div>
+
+                            <div class="start-play mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">jogar</button>
+                            </div>
+
+                            <div class="config-config mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">configurações</button>
+                            </div>
+
                         </div>
 
                     </div>
-                </div>
 
-                <div class="col-12 col-lg-3 my-3 my-lg-0">
-                    <div class="criarLicao btn bg-warning w-100 w-lg-50 h-100 mx-auto d-flex flex-column" style="border-radius: 1rem;">
-                        <p class="text-center pb-1 fs-lg-5 fs-6 mb-lg-auto mb-0">SELECIONAR <br class="d-none d-lg-block">LIÇÕES</p>
-
-                        <div class="d-none d-lg-block ptb">
-                            <hr class="mb-0">
-                            <p class="pt-0">Selecionar atividades</p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-3">
-                    <div class="criarLicao btn bg-warning w-100 w-lg-50 h-100 mx-auto d-flex flex-column" style="border-radius: 1rem;">
-                        <p class="text-center pb-1 fs-lg-5 fs-6 mb-lg-auto mb-0">RELATORIOS</p>
-
-                        <div class="d-none d-lg-block ptb">
-                            <hr class="mt-5 mb-0">
-                            <p class="pt-0">Selecionar atividades</p>
-                        </div>
-                    </div>
                 </div>
 
             </div>
-     
-            <nav class="row navbar navbar-light bg-primary mx-1 mx-lg-5">
 
-                <div class="col-12 col-lg-10 text-center text-lg-start">
-                    <a class="navbar-brand ps-lg-5" href="#">Feed de Atividades</a>
-                </div>
-                
-                <div class="col-12 col-lg-2 text-center text-lg-end">
-                    <div class="nav-item dropdown pe-lg-5">
-                        <span class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Selecionar Filho</span>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">1</a></li>
-                            <li><a class="dropdown-item" href="#">2</a></li>
-                            <li><a class="dropdown-item" href="#">3</a></li>
-                          </ul>
+            <!-- Conteudo principal -->
+            <div class="col-12 col-lg-9">
+
+                <!-- Inicio Paginação de tela pequena -->
+                <div class="esconderG">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-10 btn-group" role="group">
+
+                        <button class="btn btn-secondary">
+                            <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </span>
+                        </button>
+
+                        <button class="btn btn-secondary" disabled style="opacity: 1;">Página principal</button>
+
+                        <button class="btn btn-secondary">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
+                        </button>
+
                     </div>
+
                 </div>
-                
-            </nav>
 
-            <div class="d-flex flex-rowm mx-lg-5 mx-1 mt-1">
+                </div>
+                <!-- Fim Paginação de tela pequena -->
 
-                <div class="col-12">
+                <!-- Conteudo princiapla 1 parte - opção Criar / Selecionar / Relatorios de Lições-->
+                <div class="row pt-5">
+
+                    <div class="col-12 col-lg-4 text-lg-end text-center">
+
+                        <button type="button" class="btn btn-default botaocardP">   
+                        <div class="card text-dark bg-warning botaocardG">
+                            <div class="card-body p-1 p-lg-3">
+                              <h5 class="card-title text-center fs-cardP">Criar Lições</h5>
+
+                            <div class="esconderP">
+                              <hr>
+                              <p class="card-text text-center">Utilize varios recursos e crie sua propia lição</p>
+                            </div>
+
+                            </div>
+                          </div>
+                        </button>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 text-lg-center text-center">
+
+                        <button type="button" class="btn btn-default botaocardP">   
+                            <div class="card text-dark bg-warning botaocardG" >
+                                <div class="card-body p-1 p-lg-3">
+                                  <h5 class="card-title text-center fs-cardP">Selecionar Lições</h5>
+
+                                <div class="esconderP">
+                                  <hr>
+                                  <p class="card-text text-center">Escolha as lições para seu filho(a) completar</p>
+                                </div>
+
+                                </div>
+                              </div>
+                            </button>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 text-lg-start text-center">
+
+                        <button type="button" class="btn btn-default botaocardP">   
+                            <div class="card text-dark bg-warning botaocardG">
+                                <div class="card-body p-1 p-lg-3">
+                                  <h5 class="card-title text-center fs-cardP">Relatorio</h5>
+
+                                <div class="esconderP">
+                                  <hr>
+                                  <p class="card-text text-center">Veja o resultado das lições de seu filho(a)</p>
+                                </div>
+
+                                </div>
+                              </div>
+                            </button>
+
+                    </div>
+
+                </div>
+                <!-- Fim -->
+
+
+                <!-- Inicio Feed de Atividades -->
+                <div class="row justify-content-center pt-5">
+
+                    <div class="col-10">
+
+                        <div class="row bg-danger py-2">
+
+                            <div class="col-12 col-lg-9 align-self-center text-center text-lg-start">
+                                <h5 class="m-0">Feed de Atividades</h5>
+                            </div>
+        
+                            <div class="col-12 pt-3 pt-lg-0 col-lg-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecionar Filho</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+
+                        </div>
+
+                    </div>
                     
-                    <div class="d-flex bg-warning" style="height: 50vh;">
+                </div>
+
+                <div class="row justify-content-center pt-2">
+
+                    <div class="col-10 bg-warning" style="height: 50vh;">
 
                     </div>
 
                 </div>
-
+                <!-- fim -->
             </div>
 
         </div>
 
-    </div>
+    </section>
     
 </body>
 </html>
