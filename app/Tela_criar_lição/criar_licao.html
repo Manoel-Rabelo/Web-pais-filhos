@@ -6,94 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pais & Filhos</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/app/Tela_criar_lição/criar_licao.css">
 
     <style>
 
-        
-
-        /* Regras logo */
-        .logo{
-            min-width: 90px;
-            min-height: 75px;
-        }
-
-        .logo {
-            max-width: 15%;
-        }
-        /* Fim */
-
-
-        /* Esconder para telas peguenas */
-        .esconderP {
-            display: none;
-        }
-
-        @media (min-width: 992px) {
-            .esconderP{
-                display: block;
-            }
-        }
-        /* Fim */
-
-        /* Esconder para telas grandes */
-        .esconderG {
-            display: block;
-        }
-
-        @media (min-width: 992px) {
-            .esconderG{
-                display: none;
-            }
-        }
-        /* Fim */
-
-        /* Regras botão do card para telas pequenas */
-        @media (max-width: 992px) {
-            .botaocardP {
-                width: 100%;
-            }
-        }
-        /* Fim */
-
-        /* Regras tamanho do botão telas grandes */
-        @media (min-width: 992px){
-            .botaocardG {
-                max-width: 18rem;
-            }
-        }
-        /* Fim */
-
-        /* Fonte do card size para telas pequenas */
-        @media (max-width: 992px){
-            .fs-cardP{
-                font-size: 1rem;
-            }
-        }
-        /* Fim */
-
-        /* Regras de collapse da barra lateral */
-            .collapsed {
-                display: none;
-            }
-
-            @media (min-width: 992px) {
-                .collapsed {
-                    display: block;
-                }
-            }
-        /* Fim */
-
-        /* Tamanho da barra lateral */
-            .blsize {
-                height: 90vh;
-            }
-
-            @media (min-width: 992px) {
-                .blsize {
-                    height: 120vh;
-                }
-            }
-        /* Fim */
 
 
     </style>
@@ -105,17 +21,7 @@
 
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
-
-    <script>
-
-        $(document).ready(function(){
-            $(".mostrarBL").click(function() {
-                $("#barraLateral").toggleClass("collapsed");
-            });
-        });
-
-    </script>
-    
+    <script src="/app/Tela_criar_lição/criar_licao.js"></script>
 
     <header class="barraSup">
 
@@ -156,7 +62,7 @@
                         </span>
                         </button>
 
-                        <button class="btn btn-secondary" disabled style="opacity: 1;">Página principal</button>
+                        <button class="btn btn-secondary" disabled style="opacity: 1;">Criar Lições</button>
 
                         <button class="btn btn-secondary">
                             <span>
@@ -248,7 +154,7 @@
                         </span>
                         </button>
 
-                        <button class="btn btn-secondary" disabled style="opacity: 1;">Página principal</button>
+                        <button class="btn btn-secondary" disabled style="opacity: 1;">Criar Lições</button>
 
                         <button class="btn btn-secondary">
                             <span>
@@ -266,101 +172,148 @@
                 </div>
                 <!-- Fim Paginação de tela pequena -->
 
-                <!-- Conteudo princiapla 1 parte - opção Criar / Selecionar / Relatorios de Lições-->
-                <div class="row pt-3 pt-lg-5">
+                <!-- Inicio do Criar lições -->
+                <div class="row pt-5 justify-content-center">
 
-                    <div class="col-12 col-lg-4 text-lg-end text-center">
+                    <div class="col-4 pt-5">
 
-                        <button type="button" class="btn btn-default botaocardP">   
-                        <div class="card text-dark bg-warning botaocardG">
-                            <div class="card-body p-1 p-lg-3">
-                              <h5 class="card-title text-center fs-cardP">Criar Lições</h5>
+                        <button type="button" class="btn btn-warning w-75 mb-3" data-bs-toggle="modal" data-bs-target="#criarlicaoModal">Criar Lição</button>
 
-                            <div class="esconderP">
-                              <hr>
-                              <p class="card-text text-center">Utilize varios recursos e crie sua propia lição</p>
+                        <!-- Modal Criar Lições -->
+                        <div class="modal fade" id="criarlicaoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="criarlicaoModal" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="criarlicaoModalLabel">Criar Lição</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                        <div class="container-fluid">
+
+                                            <form action="#" id="criarlicaoFomr">
+
+                                            <div class="row pt-3">
+
+                                                <div class="col-6">
+                                                    <h6>Selecionar a Materia</h6>
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Selecione</option>
+                                                        <option value="portugues">Português</option>
+                                                        <option value="matematica">Matematica</option>
+                                                        <option value="artes">Artes</option>
+                                                      </select>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row justify-content-center py-5">
+
+                                                <div class="col-6">
+                                                    <h6>Selecone a Dificuldade</h6>
+                                                </div>
+
+                                                <div class="col-6 btn-group" role="group" aria-label="selecao de dificuldade">
+
+                                                    <input type="radio" class="btn-check" name="options" id="btn-facil" autocomplete="off">
+                                                    <label class="btn btn-primary" for="btn-facil">Facil</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="btn-medio" autocomplete="off">
+                                                    <label class="btn btn-primary" for="btn-medio">Medio</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="btn-dificil" autocomplete="off">
+                                                    <label class="btn btn-primary" for="btn-dificil">Dificil</label>
+
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-6">
+                                                    <h6>Selecionar o Modelo</h6>
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Selecione</option>
+                                                        <option value="m1">Modelo 1</option>
+                                                        <option value="m2">Modelo 2</option>
+                                                        <option value="m3">Modelo 3</option>
+                                                        <option value="m4">Modelo 4</option>
+                                                        <option value="m5">Modelo 5</option>
+                                                      </select>
+                                                </div>
+
+                                            </div>
+
+                                            <hr>
+                                            <input type="submit" class="btn btn-primary px-5" for="#criarlicaoFomr" value="Criar"></input>
+                                            
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
+                        </div>
+                        <!-- Fim -->
 
-                            </div>
-                          </div>
-                        </button>
+                        <button type="button" class="btn btn-warning w-75">Selecionar Lição</button>
 
                     </div>
 
-                    <div class="col-12 col-lg-4 text-lg-center text-center">
+                    <div class="col-6">
 
-                        <button type="button" class="btn btn-default botaocardP">   
-                            <div class="card text-dark bg-warning botaocardG" >
-                                <div class="card-body p-1 p-lg-3">
-                                  <h5 class="card-title text-center fs-cardP">Selecionar Lições</h5>
+                        <div class="mylicoesTittle" id="mylicoesTittle">
+                            <h6 class="text-center bg-warning py-2">Minhas Lições</h6>
 
-                                <div class="esconderP">
-                                  <hr>
-                                  <p class="card-text text-center">Escolha as lições para seu filho(a) completar</p>
+                            <div class="mylicoesBody row bg-light" id="mylicoesBody" style="height: 80vh;">
+
+                                <div class="col-12">
+
+                                    <div class="row">
+
+                                        <div class="col-8">
+                                            <h5>Nome da Lição</h5>
+                                            <hr>
+                                            <p>Descrição da lição</p>
+                                        </div>
+
+                                        <div class="col-4">
+
+                                            <div class="row">
+
+                                                <div class="col">
+                                                    <p>Mat</p>
+                                                    <p>Por</p>
+                                                    <p>Art</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
-                                </div>
-                              </div>
-                            </button>
-
-                    </div>
-
-                    <div class="col-12 col-lg-4 text-lg-start text-center">
-
-                        <button type="button" class="btn btn-default botaocardP">   
-                            <div class="card text-dark bg-warning botaocardG">
-                                <div class="card-body p-1 p-lg-3">
-                                  <h5 class="card-title text-center fs-cardP">Relatorio</h5>
-
-                                <div class="esconderP">
-                                  <hr>
-                                  <p class="card-text text-center">Veja o resultado das lições de seu filho(a)</p>
-                                </div>
-
-                                </div>
-                              </div>
-                            </button>
-
-                    </div>
-
-                </div>
-                <!-- Fim -->
-
-
-                <!-- Inicio Feed de Atividades -->
-                <div class="row justify-content-center pt-3 pt-lg-5">
-
-                    <div class="col-10">
-
-                        <div class="row bg-danger py-2">
-
-                            <div class="col-12 col-lg-9 align-self-center text-center text-lg-start">
-                                <h5 class="m-0">Feed de Atividades</h5>
-                            </div>
-        
-                            <div class="col-12 pt-3 pt-lg-0 col-lg-3">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Selecionar Filho</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
                             </div>
 
                         </div>
 
                     </div>
-                    
                 </div>
+                <!-- Fim -->
 
-                <div class="row justify-content-center pt-2">
-
-                    <div class="col-10 bg-warning" style="height: 50vh;">
-
-                    </div>
-
-                </div>
-                <!-- fim -->
             </div>
 
         </div>
