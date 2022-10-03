@@ -1,0 +1,45 @@
+body {
+  background: url(./../../../assets/img/bg-licao2.png) no-repeat !important;
+  background-size: cover !important;
+}
+
+main {
+  width: 882px;
+  height: 803px;
+
+  background: #4f9de9;
+  border: 3px solid #000000;
+  border-radius: 44px;
+}
+
+.rosto-robo {
+  /* Rectangle 1651 */
+
+  width: 690px;
+  height: 269px;
+
+  background: #50ffbb;
+  border: 2px solid #000000;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 33px;
+}
+
+.rosto-robo-cara {
+  /* Rectangle 1655 */
+
+  width: 680px;
+  height: 259px;
+
+  background: #d9d9d9;
+  border: 2px solid #000000;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 33px;
+}
+
+.box-reposta{
+  width: 360px;
+  height: 68px;
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
