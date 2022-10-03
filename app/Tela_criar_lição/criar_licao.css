@@ -1,0 +1,61 @@
+       
+       
+        /* Regras logo */
+        .logo{
+            min-width: 90px;
+            min-height: 75px;
+         }
+        
+        .logo {
+             max-width: 15%;
+        }
+         /* Fim */
+
+
+        /* Esconder para telas peguenas */
+        .esconderP {
+            display: none;
+        }
+
+        @media (min-width: 992px) {
+            .esconderP{
+                display: block;
+            }
+        }
+        /* Fim */
+
+        /* Esconder para telas grandes */
+        .esconderG {
+            display: block;
+        }
+
+        @media (min-width: 992px) {
+            .esconderG{
+                display: none;
+            }
+        }
+        /* Fim */
+
+        /* Regras de collapse da barra lateral */
+            .collapsed {
+                display: none;
+            }
+
+            @media (min-width: 992px) {
+                .collapsed {
+                    display: block;
+                }
+            }
+        /* Fim */
+
+        /* Tamanho da barra lateral */
+            .blsize {
+                height: 90vh;
+            }
+
+            @media (min-width: 992px) {
+                .blsize {
+                    height: 120vh;
+                }
+            }
+        /* Fim */
