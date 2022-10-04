@@ -10,49 +10,160 @@
   </head>
 
   <body>
+    <div class="mb-5">
+      <input type="range" min="0" max="100" step="1" value="50" id="range" />
+      <div class="progress-bar w-75 m-auto"></div>
+    </div>
     <main class="m-auto">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="rosto-robo d-flex justify-content-end m-auto mt-3">
               <div
-                class="
-                  rosto-robo-cara
-                  d-flex
-                  align-items-center
-                  justify-content-center
-                "
+                class="rosto-robo-cara d-flex align-items-center justify-content-center"
               >
                 <p class="text-center">Responda uma pergunta corretamente</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row ">
-          <div class="col">
-            <div class="row d-flex flex-column">
-              <div class="col">
-                <div class="box-reposta"></div>
-              </div>
-              <div class="col">
-                <div class="box-reposta"></div>
-              </div>
-              <div class="col">
-                <div class="box-reposta"></div>
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col">
+              <div class="row">
+                <div class="d-flex flex-column justify-content-around">
+                  <div class="col py-3">
+                    <div
+                      class="box-reposta d-flex align-items-center justify-content-center"
+                    >
+                      <p class="m-0 align-self-center">Responda a questao</p>
+                    </div>
+                  </div>
+                  <div class="col py-3">
+                    <div
+                      class="box-reposta d-flex align-items-center justify-content-center"
+                    >
+                      <p class="m-0 align-self-center">Responda a questao</p>
+                    </div>
+                  </div>
+                  <div class="col py-3">
+                    <div
+                      class="box-reposta d-flex align-items-center justify-content-center"
+                    >
+                      <p class="m-0 align-self-center">Responda a questao</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div class="row">
-              
+            <div class="col m-auto">
+              <div class="row">
+                <div class="col">
+                  <div class="d-flex justify-content-around">
+                    <a href="#">
+                      <svg
+                        width="160"
+                        height="160"
+                        viewBox="0 0 284 259"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="0.5"
+                          y="90.5439"
+                          width="282.387"
+                          height="81.6642"
+                          fill="#F5E525"
+                          stroke="black"
+                        />
+                        <rect
+                          x="98.0469"
+                          y="0.5"
+                          width="87.292"
+                          height="258"
+                          fill="#F5E525"
+                          stroke="black"
+                        />
+                        <rect
+                          x="1"
+                          y="91.0439"
+                          width="281.387"
+                          height="80.6642"
+                          fill="#F5E525"
+                        />
+                      </svg>
+                    </a>
+                    <div class="d-flex justify-content-around">
+                      <a href="#"
+                        ><svg
+                          width="164"
+                          height="164"
+                          viewBox="0 0 164 164"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_d_292_38)">
+                            <circle cx="82" cy="78" r="75" fill="#F91313" />
+                            <circle
+                              cx="82"
+                              cy="78"
+                              r="75"
+                              stroke="black"
+                              stroke-width="6"
+                            />
+                          </g>
+                          <defs>
+                            <filter
+                              id="filter0_d_292_38"
+                              x="0"
+                              y="0"
+                              width="164"
+                              height="164"
+                              filterUnits="userSpaceOnUse"
+                              color-interpolation-filters="sRGB"
+                            >
+                              <feFlood
+                                flood-opacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha"
+                              />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_292_38"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_292_38"
+                                result="shape"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <col>
           </div>
         </div>
       </div>
     </main>
+    <script src="./game-script.js"></script>
   </body>
 </html>
