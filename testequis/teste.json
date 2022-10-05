@@ -1,6 +1,6 @@
 [
     {
-        "pergunta": "Qual é a cor da grama?",
+        "pergunta": "Qual é a cor da grama",
         "resposta": "Verde",
         "opcoes": [
             "Amarelo",
@@ -10,7 +10,7 @@
     },
 
     {
-        "pergunta": "Qual é a cor da grama?",
+        "pergunta": "Qual é a cor da grama",
         "resposta": "Verde",
         "opcoes": [
             "Amarelo",
