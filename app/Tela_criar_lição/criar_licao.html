@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pais & Filhos</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/app/Tela_criar_lição/criar_licao.css">
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./criar_licao.css">
 
     <style>
 
@@ -19,9 +19,9 @@
 
 <body>
 
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/bootstrap.js"></script>
-    <script src="/app/Tela_criar_lição/criar_licao.js"></script>
+    <script src="./../../assets/js/jquery.js"></script>
+    <script src="./../../assets/js/bootstrap.js"></script>
+    <script src="./criar_licao.js"></script>
 
     <header class="barraSup">
 
@@ -273,35 +273,61 @@
 
                     <div class="col-6">
 
-                        <div class="mylicoesTittle" id="mylicoesTittle">
-                            <h6 class="text-center bg-warning py-2">Minhas Lições</h6>
+                        <div class="row">
 
-                            <div class="mylicoesBody row bg-light" id="mylicoesBody" style="height: 80vh;">
+                            <div class="col-12 bg-warning text-center">
+                                <h6 class="my-2">Minhas Lições</h6>
+                            </div>
 
-                                <div class="col-12">
+                        </div>
 
-                                    <div class="row">
+                        <!-- Cartão de Lição -->
+                        <div class="row mt-2">
 
-                                        <div class="col-8">
-                                            <h5>Nome da Lição</h5>
-                                            <hr>
-                                            <p>Descrição da lição</p>
-                                        </div>
+                            <div class="col-12 bg-light" style="height: 80vh;">
+                            
+                                <div class="row justify-content-center py-2">
 
-                                        <div class="col-4">
+                                    <div class="col-11 btn btn-warning rounded-3">
+                                        <div class="d-flex flex-row p-1">
+                                            
+                                            <div class="col-8 nomeDescricao pt-2 text-start">
+                                                <h6 class="mb-0">Nome da Lição</h6>
+                                                <hr class="mt-0">
+                                                <p>Descrição da Lição</p>
+                                            </div>
 
-                                            <div class="row">
+                                            <div class="col-4 disciplinaDiff">
 
-                                                <div class="col">
-                                                    <p>Mat</p>
-                                                    <p>Por</p>
-                                                    <p>Art</p>
+                                                <div class="row">
+
+                                                    <div class="col-4 px-0"></div>
+                                                    <div class="col-4 px-0"></div>
+
+                                                    <div class="col-4 px-0">
+
+                                                        <img src="./../../assets/img/iconeMatematica.svg" alt="" style="width: 1.5rem;">
+
+                                                    </div>
+
                                                 </div>
 
+                                                <div class="row mt-3">
+
+                                                    <div class="col-4"></div>
+                                                    <div class="col-4"></div>
+
+                                                    <div class="col-4">
+
+                                                        <img src="./../../assets/img/iconeDiffMedio.svg" alt="" style="width: 1.5rem;">
+
+                                                    </div>
+
+                                                </div>
+                                                
                                             </div>
 
                                         </div>
-
                                     </div>
 
                                 </div>
