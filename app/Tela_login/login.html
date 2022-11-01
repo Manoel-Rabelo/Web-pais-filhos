@@ -4,131 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <title>Document</title>
-    <style>
-        
-        .bg-fund{
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-            width: 100%;
-            position: relative;
-            background-image: cover;
-            background-image: url(/assets/img/bg-login00.svg);
-            background-repeat: no-repeat;
 
-        }
-        .logo{
-            margin-top: 10%;
-            width: 20%;
-            position: absolute;
-            margin-left: 15%;
-            text-align: center;
-
-        
-        }
-        .botao{
-    
-            margin-top: 1%;
-            margin-left: 0%;
-            text-align: center;
-            width: 50%;
-        }
-        .col-12{
-        
-            margin-top: 7%;
-            position: absolute;
-            width: 20%;
-            left: 50%;
-            transform: translate(-50% -50%);
-            
-        }
-        .card{
-            margin-top: 5%;
-            box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.9);
-            background-color: rgb(184, 175, 236);
-            border-radius: 2%;
-            border: 2px solid;
-        }
-        legend{
-            border: 2px solid black;
-            border-radius: 5px;
-            background-color: rgb(247, 245, 131);
-        }
-        
-    </style>
-    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <title>Login</title>
+ 
+   
 </head>
 <body>
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/bootstrap.js"></script>
+    <script src="./../../assets/js/jquery.js"></script>
+    <script src="./../../assets/js/bootstrap.bundle.min.js"></script>
     
-    <div class="container-fluid bg-fund tex-start">
+
+    <div class="bg-fund tex-start">
+
         <section>
-            <div class="logo text-center pt-2">
-                <img src="/assets/img/Logo_paisFilhos.svg" alt="">
-                <button class=" botao btn btn-primary border-dark">Cadastrar-se</button>
-            </div>
-        </section>
-            
-                <div class="col-12 col-lg-12">
-                    <div class="card pt-5 pb-5">
-                        <div class="card-body">
-                            <legend><b><H2 class="text-center">LOGIN</H2></b> </legend>
-                            <form>
-                                <div class="form-group pt-3">
-                                    <label class="text-start" for="Usuario:"> <b>Nome de usuário</b> </label>
-                                    <input class="form-control border border-dark" type="text" name="Nome" placeholder="Digite seu nome de usuário">
-                                </div>
-        
-                                <div class="form-group pt-4 pb-3">
-                                    <label class="text-start" for="senha:"><b>Senha</b></label>
-                                    <input class=" form-control border border-dark" type="password" name="senha" placeholder="Digite sua senha">
 
-                                </div>
-                                <div class="form-group pt-5 pb-5 text-center d-grid gap-2 col-6 mx-auto">
-                                    <button type="submit" class="btn btn-primary border-dark">Entrar</button>
+        <div class="container pt-5">
 
-                                </div>
-                                <div class="pt-3 text-center">
-                                    <a class="text-black"href="">Esqueceu sua senha?</a>
-                                </div>
-                                
-                            </form>
+            <div class="row m-auto pt-5">
 
-                            
+                <div class="col-6 text-center">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./../../assets/img/Logo_paisFilhos.svg" class="w-75" alt="">
+                        </div>
+    
+                        <div class="col-12" style="margin-top: -15%;">
+                            <a href="./../Tela_cadastro/cadastro.html" class="btn btn-primary border-dark"><p class="mb-0">Cadastre-se</p></a>
                         </div>
                     </div>
 
-                    
-
-                    
                 </div>
-            
-    </div>
-                                
-                                
-                                
-                                
-                            
 
-
-                    </div>
-                </div>
+                <div class="col-12 col-lg-6">   
+                    <div class="card pt-5 pb-5">
+        
+                        <div class="card-body">
+                            <legend><b><H2 class="text-center">LOGIN</H2></b> </legend>
+        
+                                <form>
+                                    <div class="form-group pt-3">
+                                        <label class="text-start" for="Usuario:"> <b>Nome de usuário</b> </label>
+                                        <input class="form-control border border-dark" type="text" name="Nome" placeholder="Digite seu nome de usuário">
+                                    </div>
                 
+                                    <div class="form-group pt-4 pb-3">
+                                        <label class="text-start" for="senha:"><b>Senha</b></label>
+                                        <input class=" form-control border border-dark" type="password" name="senha" placeholder="Digite sua senha">
+        
+                                    </div>
+        
+                                    <div class="form-group pt-5 pb-5 text-center d-grid gap-2 col-6 mx-auto">
+                                        <button type="submit" class="btn btn-primary border-dark">Entrar</button>
+                                    </div>
+        
+                                    <div class="pt-3 text-center">
+                                        <a class="text-black"href="">Esqueceu sua senha?</a>
+                                    </div>
+                                        
+                                </form>
+        
+                        </div>
+                    </div>        
+                 
+                </div>
 
             </div>
 
+        </div>
             
+        </section>
 
+        <footer class="rodape">
 
-
+            <div class="container-fluid border-top border-dark border-3 bg-light">
+    
+                <div class="container">
+    
+                    <div class="row pt-3">
+                        <div class="col-12 text-center">
+                            <h5>Tabajara Tech Inc.</h3>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="lead">Todos os Direitos reservados</h3>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </footer>
+            
     </div>
-
-    <footer class="rodape"><!--Início do Rodapé-->
-        <p>Copyright © School Software AM - 2021. Todos os direitos reservados.</p>
-    </footer>
     
 </body>
 </html>

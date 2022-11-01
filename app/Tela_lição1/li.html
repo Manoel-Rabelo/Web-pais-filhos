@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L I</title>
+
+    <link rel="stylesheet" href="./liof.css">
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+
+    
+</head>
+<body>
+
+    <!-- Inicio Modal - responder perguntas -->
+
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-conteudo modal-animation">
+            <img src="./../../assets/img/pontoSVG/bg-fundo-modal-licao1.svg" class="bg-modal" alt="">
+
+            <div class="status-resposta"><p id="status-resposta"></p></div>
+            
+            <div class="btnProxima" id="btn-proxima"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Fim Modal - responder perguntas -->
+
+    <div class="bg-fundo">
+
+        <div class="bg-terra">
+            <img src="./../../assets/img/pontoSVG/terra-fundo.svg" alt="">
+        </div>
+
+        <div class="bg-sol">
+            <img src="./../../assets/img/pontoSVG/sol.svg" alt="">
+        </div>
+
+        <!-- Conteudo inicial - start -->
+        <div id="conteudo-inicial">
+
+            <div class="imgA-start">
+                <img src="./../../assets/img/pontoSVG/mural-começar-jogo.svg" alt="">
+            </div>
+        
+            <div class="btn-start-area">
+                <button type="button" class="btn-start" id="btn-start">
+                    <img src="./../../assets/img/pontoSVG/comecar-jogo.svg" alt="">
+                </button>
+            </div>
+        
+            </div>
+            <!-- Fim Conteudo inicial - start -->
+        
+            <!-- Inicio conteudo das lições -->
+            <section id="conteudo-da-licao">
+
+                <div class="marcadores-config-grid">
+        
+                    <div class="marcador-pause d-none">
+                        <p>pause</p>
+                    </div>
+        
+                    <div class="marcador-som d-none">
+                        <p>som</p>
+                    </div>
+        
+                </div>
+
+                <div class="d-flex justify-content-center">
+
+                    <div class="row-cnt text-end" id="local-msg"></div>
+
+                </div>
+
+                <div class="conteudo-licao" id="conteudo-licao">
+
+                    <div class="d-flex justify-content-center" id="local-questao">
+            
+                    </div>
+            
+                </div>
+        
+            </section>
+            <!-- Fim conteudo das lições -->
+
+    </div>
+
+    <script src="./li.js"></script>
+
+</body>
+</html>
