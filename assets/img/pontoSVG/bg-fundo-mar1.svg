@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#218DCE;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#56C4EF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:#56C4EF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#218DCE;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;}
+	.st5{fill:none;stroke:#218DCE;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:10.283,20.566;}
+	
+		.st6{fill:none;stroke:#218DCE;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:96.6604,30.8491,10.283,20.566;}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-90.7368" y1="384" x2="1490.4946" y2="384">
+		<stop  offset="0.0169" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.0206" style="stop-color:#FDFFFF"/>
+		<stop  offset="0.0655" style="stop-color:#E7FBFF"/>
+		<stop  offset="0.1181" style="stop-color:#D6F8FF"/>
+		<stop  offset="0.1836" style="stop-color:#CBF6FF"/>
+		<stop  offset="0.2755" style="stop-color:#C4F4FF"/>
+		<stop  offset="0.5307" style="stop-color:#C2F4FF"/>
+		<stop  offset="0.7523" style="stop-color:#C4F4FF"/>
+		<stop  offset="0.832" style="stop-color:#CBF6FF"/>
+		<stop  offset="0.8889" style="stop-color:#D6F8FF"/>
+		<stop  offset="0.9346" style="stop-color:#E7FBFF"/>
+		<stop  offset="0.9736" style="stop-color:#FDFFFF"/>
+		<stop  offset="0.9767" style="stop-color:#FFFFFF"/>
+	</linearGradient>
+	<rect class="st0" width="1366" height="768"/>
+</g>
+<ellipse class="st1" cx="518.5" cy="80.5" rx="121.5" ry="114.5"/>
+<ellipse class="st1" cx="98.5" cy="684.49" rx="191" ry="180"/>
+<ellipse class="st1" cx="634.95" cy="483.44" rx="95.49" ry="89.99"/>
+<ellipse class="st2" cx="562.24" cy="406.36" rx="51.85" ry="48.86"/>
+<ellipse class="st2" cx="778.24" cy="578.36" rx="51.85" ry="48.86"/>
+<ellipse class="st2" cx="716.67" cy="692.86" rx="33.28" ry="31.36"/>
+<ellipse class="st2" cx="536" cy="96.26" rx="74" ry="69.74"/>
+<ellipse class="st2" cx="122.08" cy="633.5" rx="96.56" ry="91"/>
+<ellipse class="st1" cx="111.25" cy="300.28" rx="61.25" ry="57.72"/>
+<ellipse class="st1" cx="226" cy="423.26" rx="74" ry="69.74"/>
+<ellipse class="st2" cx="237.14" cy="403" rx="37.14" ry="35"/>
+<ellipse class="st2" cx="134.14" cy="269" rx="37.14" ry="35"/>
+<ellipse class="st1" cx="1116" cy="216" rx="121.5" ry="114.5"/>
+<ellipse class="st2" cx="656.16" cy="188.5" rx="46.16" ry="43.5"/>
+<ellipse class="st3" cx="172.16" cy="156.5" rx="46.16" ry="43.5"/>
+<ellipse class="st3" cx="98.81" cy="69.25" rx="35.81" ry="33.75"/>
+<ellipse class="st2" cx="1116.67" cy="215.5" rx="96.56" ry="91"/>
+<ellipse class="st2" cx="930.16" cy="201.5" rx="46.16" ry="43.5"/>
+<ellipse class="st2" cx="989" cy="80.5" rx="46.16" ry="43.5"/>
+<ellipse class="st2" cx="1116" cy="50.5" rx="46.16" ry="43.5"/>
+<g>
+	<g>
+		<path class="st4" d="M1187.5,348.5c10.34,11.3,20.63,23.52,29.9,36.24"/>
+		<path class="st5" d="M1234.18,410.61c3.44,6.1,6.52,12.25,9.14,18.41"/>
+		<path class="st6" d="M1247.01,438.62c6.43,18.72,8.17,37.38,2.49,54.88c-12.63,38.89-53.13,44.94-62,79
+			c-6.55,25.15,4.79,63.11,72.34,122.15"/>
+		<path class="st4" d="M1267.64,701.35c10.91,9.21,23.15,18.92,36.86,29.15"/>
+	</g>
+</g>
+</svg>

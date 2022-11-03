@@ -1,0 +1,432 @@
+/* Regras da pagina */
+* {
+    box-sizing: border-box;
+}
+
+body  {
+    margin: 0px;
+}
+/* fim */
+
+/* Configuração do container com todo o conteudo da pagina - div principal */
+.fundo-principal {
+    background-image: url(./../../assets/img/pontoSVG/tela-inicial-filhon-fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* esconder as margens negativas necessarias para a animação - tira o scroll da pagina */
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    /* necessario para poder ajustar a posição de todos os elementos filhos principalmente os que serão animados */
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    /* Tornando flex para melhor centralização dos filhos */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Elementos da para animar */
+/* Sol */
+.sol {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+    z-index: 1000;
+    display: inline;
+}
+/* Fim */
+
+/* Nuvens */
+.nuvem-A {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: inline;
+
+    margin-left: -10%;
+
+    animation-name: nuvemA;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.nuvem-A1 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    display: inline;
+
+    margin-left: -25%;
+
+    opacity: 80%;
+    z-index: 1001;
+
+    animation-name: nuvemA;
+    animation-duration: 35s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.nuvem-A2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    display: inline;
+
+    margin-left: -25%;
+
+    opacity: 80%;
+    z-index: 1001;
+
+    animation-name: nuvemC;
+    animation-duration: 50s;
+    animation-delay: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.nuvem-A3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    display: inline;
+
+    margin-right: -25%;
+
+    opacity: 80%;
+    z-index: 1001;
+
+    animation-name: nuvemB;
+    animation-duration: 50s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* Fim */
+
+/* Terra - bacground */
+.terra {
+    width: 100%;
+
+    position: absolute;
+
+    bottom: 0%;
+
+    z-index: 1005;
+}
+/* Fim */
+
+/* Passaros */
+.gaviota-A {
+    width: 50px;
+    height: 50px;
+    display: inline;
+
+    position: absolute;
+    top: 0%;
+    right: 10%;
+
+    margin-top: -25%;
+
+    animation-name: gaviotaA;
+    animation-duration: 20s;
+    animation-delay: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.gaviota-B {
+    width: 50px;
+    height: 50px;
+    display: inline;
+
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+
+    margin-bottom: -25%;
+
+    animation-name: gaviotaB;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.gaviota-C {
+    width: 50px;
+    height: 50px;
+    display: inline;
+
+    position: absolute;
+    top: 40%;
+    right: 0%;
+
+    margin-right: -25%;
+
+    animation-name: gaviotaC;
+    animation-duration: 40s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* Fim */
+
+/* Balão de ar-quente */
+.balao-A {
+    width: 100px;
+    height: 150px;
+    display: inline;
+
+    position: absolute;
+    top: 80%;
+    right: 20%;
+
+    animation-name: balaoA;
+    animation-duration: 40s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    z-index: 1002;
+}
+
+.balao-B {
+    width: 100px;
+    height: 150px;
+    display: inline;
+
+    position: absolute;
+    top: 80%;
+    left: 10%;
+
+    animation-name: balaoB;
+    animation-duration: 30s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    z-index: 1002;
+}
+
+.balao-C {
+    width: 100px;
+    height: 150px;
+    display: inline;
+
+    position: absolute;
+    top: 40%;
+    left: 0%;
+
+    margin-left: -25%;
+
+    animation-name: balaoC;
+    animation-duration: 30s;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    z-index: 1002;
+}
+/* Fim */
+
+
+
+/* Animações */
+/* Animação das nuvens */
+@keyframes nuvemA {
+    from {
+        margin-left: -5%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+
+@keyframes nuvemB {
+    from {
+        margin-right: -15%;
+    }
+    to{
+        margin-right: 100%;
+    }
+}
+
+@keyframes nuvemC {
+    from {
+        margin-left: -15%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+/* Fim */
+
+/* Animação do passaros */
+@keyframes gaviotaA {
+    from {
+        margin-top: -25%;
+    }
+    to{
+        margin-top: 30%;
+        margin-right: 100%;
+    }
+}
+@keyframes gaviotaB {
+    from {
+        margin-bottom: 0%;
+    }
+    to{
+        margin-bottom: 50%;
+        margin-right: 70%;
+    }
+}
+@keyframes gaviotaC {
+    from {
+        margin-right: -25%;
+    }
+    to{
+        margin-top: -15%;
+        margin-right: 100%;
+    }
+}
+/* Fim */
+
+/* Animação balão de ar-quente */
+@keyframes balaoA {
+    from {
+        margin-top: 0%;
+    }
+    to{
+        margin-top: -100%;
+    }
+}
+
+@keyframes balaoB {
+    from {
+        margin-top: 0%;
+    }
+    to{
+        margin-top: -80%;
+        margin-left: 90%;
+    }
+}
+
+@keyframes balaoC {
+    from {
+        margin-left: -25%;
+    }
+    to{
+        top: 30%;
+        margin-left: 100%;
+    }
+}
+/* Fim */
+
+
+/* Texto vamos começar e animação do mesmo */
+.vamos-comecar {
+    position: absolute;
+
+    top: 10%;
+
+    width: 300px;
+    height: 60px;
+
+    z-index: 1010;
+
+    animation-name: textoComecar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textoComecar {
+    from {
+        width: 300px;
+        height: 60px;
+    }
+    to{
+        width: 330px;
+        height: 65px;
+    }
+}
+/* Fim */
+
+/* Botão jogar e animação do mesmo */
+.botaozao {
+    background-color: blanchedalmond;
+    border: 5px solid brown;
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+
+    z-index: 1009;
+    
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    top: 40%;
+}
+
+.jogar {
+    position: relative;
+    align-self: center;
+    border: 0;
+
+    width: 95%;
+    height: 95%;
+
+    margin-left: -5px;
+    margin-top: -5px;
+
+    background-color: red;
+    border-radius: 10000px;
+
+    cursor: pointer;
+    z-index: 1010;
+
+    box-shadow:5px 5px 0 1px darkred;
+
+    transition-property: box-shadow, transform;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+
+}
+
+.jogar:hover {
+    box-shadow:8px 8px 0 1px darkred;
+    transform: translate(-3px, -3px); 
+}
+
+
+.texto-jogar {
+    margin-top: 20px;
+}
+
+/* Fim */

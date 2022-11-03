@@ -1,0 +1,21 @@
+[
+    {
+        "pergunta": "Qual é a cor da CasaAzul",
+        "resposta": "Amarelo",
+        "opcoes": [
+            "Azul",
+            "Azul",
+            "Azul"
+        ]
+    },
+
+    {
+        "pergunta": "Qual é a cor da CarroVermelho",
+        "resposta": "Verde",
+        "opcoes": [
+            "Vermelho",
+            "Vermelho",
+            "laranja"
+        ]
+    }
+]
