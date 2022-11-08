@@ -293,19 +293,16 @@ body {
 /* modal - responder perguntas*/
 
 /* The Modal (background) */
-.modal {
+.modal-li {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1050; /* Sit on top */
 
 
     background-color: transparent;
-    left: 0;
-    top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
-
 
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -328,35 +325,61 @@ body {
 
   /* Modal Content */
   .modal-conteudo {
+    width: 600px;
+    height: 800px;
+
+    margin:auto;
+
+    margin-top: 80px;
+
     display: flex;
     flex-direction: column;
   }
 
   .bg-modal {
-    width: 600px;
-    height: 800px;
+    width: 100%;
+    max-width: 800px;
 
-    margin-top: -5%;
-    align-self: center;
+    background-image: url(./../../assets/img/pontoSVG/bg-fundo-modal-licao1.svg);
   }
 
   .status-resposta {
-    position: absolute;
-    width: 100%;
+    width: 600px;
+    height: 200px;
+
+    margin-top: 12rem;
 
     font-size: 4rem;
-    text-align: center;
+    font-family: Colus;
 
-    top: 35%;
+    text-align: center;
+    align-self: center;
+  }
+
+  .status-resposta > p {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      margin-bottom: 0%;
   }
 
   .btnProxima {
-    position: absolute;
-    width: 100%;
+      display: flex;
+      justify-content: center;
 
-    font-size: 3rem;
-    text-align: center;
+      margin-top: 4.5rem;
+  }
 
-    top: 60%;
+  .proxima-pergunta {
+      width: 200px;
+      height: 200px;
+  }
 
+  .bg-btn-proximo {
+
+    width: 200px;
+    height: 200px;
+
+    background-image: url(./../../assets/img/pontoSVG/btn-rainbow-teste.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }

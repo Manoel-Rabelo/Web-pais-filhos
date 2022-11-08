@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar lição</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/app/Tela_criar_lição/criar_licao.css">
+</head>
+<body>
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/app/Tela_criar_lição/criar_licao.js"></script>
+    <section>
+        <!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecv3</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/app/Tela_criar_lição/criar_licao.css">
+
+    <style>
+        legend{
+            background-color: rgb(0, 23, 65);
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/app/Tela_criar_lição/criar_licao.js"></script>
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
+    
+    
+
+    
+
+
+    <header class="barraSup">
+
+        <div class="container-fluid">
+
+        <div class="row bg-light">
+
+            <!-- Botão de menu -->
+            <div class="col-4 d-block d-lg-none text-center align-self-center">
+
+                <button type="button" class="btn btn-secondary mostrarBL">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                    </span>
+                </button>
+
+            </div>
+
+            <!-- Logo -->
+            <div class="col-8 col-lg-3 text-lg-center">
+                <img src="/assets/img/Logo_paisFilhos_pequena.svg" class="logo img-fluid" alt="">
+            </div>
+
+            <!-- paginação tela grande -->
+            <div class="col-lg-9 d-none d-lg-block">
+
+                <div class="row justify-content-end py-lg-3">
+
+                    <div class="col-6 btn-group" role="group">
+
+                        <button class="btn btn-secondary" onclick="goBack()">
+                            <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </span>
+                        </button>
+
+                        <button class="btn btn-secondary" disabled style="opacity: 1;">Selecionar Lição</button>
+
+                        <button class="btn btn-secondary">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </header>
+
+    <section class="main-content">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <!-- Barra Lateral -->
+                <div class="col-lg-3 collapsed" id="barraLateral">
+                    
+                    <div class="row">
+
+                        <div class="col-12 bg-light blsize">
+
+                            <div class="row d-flex flex-column">
+
+                                <div class="img-perfil bg-warning rounded-circle mt-3 align-self-center" style="height: 6rem; width: 6rem;">
+                
+                                </div>
+
+                                <div class="nome-user bg-white mt-3 align-self-center w-75 rounded-3 border border-dark">
+                                    <p class="py-2 px-4 mb-0 text-center">Tabajara</p>
+                                </div>
+
+                                <div class="email-user bg-white mt-3 align-self-center w-75 rounded-3 border border-dark">
+                                    <p class=" py-2 px-4 mb-0 text-center">tabajara.tech@gmail.com</p>
+                                </div>
+
+                                <div class="config-perfil mt-3 align-self-center w-75">
+                                    <button type="button" class="btn btn-danger w-100">Perfil</button>
+                                </div>
+
+                                <div class="add-filho mt-3 align-self-center w-75">
+                                    <button type="button" class="btn btn-danger w-100">+ Filho</button>
+                                </div>
+
+                                <div class="start-play mt-3 align-self-center w-75">
+                                    <button type="button" class="btn btn-danger w-100">jogar</button>
+                                </div>
+
+                                <div class="config-config mt-3 align-self-center w-75">
+                                    <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">configurações</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Conteudo principal -->
+                <div class="col-12 col-lg-9">
+
+                    <!-- Inicio Paginação de tela pequena -->
+                    <div class="esconderG">
+
+                        <div class="row justify-content-center pt-3">
+
+                            <div class="col-10 btn-group" role="group">
+
+                                <button class="btn btn-secondary">
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                                    </svg>
+                                </span>
+                                </button>
+
+                                <button class="btn btn-secondary" disabled style="opacity: 1;">Selecionar Lição</button>
+
+                                <button class="btn btn-secondary">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Fim Paginação de tela pequena -->
+
+                    
+
+                    <!-- Inicio do conteúdo selecionar lição-->
+                    <div class="row pt- justify-content-center pt-5">                            
+                        <div class="col-4 pt-5">
+                            <div class="pt-2 pb-2">
+                                <button type="button" class="btn btn-warning w-75 text-white" style="background-color: rgb(0, 23, 65);">Selecionar Lição</button>
+                            </div>
+                            
+                            
+                            <button type="button" class="btn btn-warning w-75 mb-3" data-bs-toggle="modal" data-bs-target="#criarlicaoModal">Criar lição</button>
+
+                            <!-- Modal Criar Lições -->
+                            
+                            <div class="modal fade" id="criarlicaoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="criarlicaoModal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="criarlicaoModalLabel">Criar lição</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="container-fluid">
+
+                                                <form action="#" id="criarlicaoFomr">
+
+                                                <div class="row pt-3">
+
+                                                    <div class="col-6">
+                                                        <h6>Selecionar a Materia</h6>
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Selecione</option>
+                                                            <option value="portugues">Português</option>
+                                                            <option value="matematica">Matematica</option>
+                                                            <option value="artes">Artes</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row justify-content-center py-5">
+
+                                                    <div class="col-6">
+                                                        <h6>Selecone a Dificuldade</h6>
+                                                    </div>
+
+                                                    <div class="col-6 btn-group" role="group" aria-label="selecao de dificuldade">
+
+                                                        <input type="radio" class="btn-check" name="options" id="btn-facil" autocomplete="off">
+                                                        <label class="btn btn-primary" for="btn-facil">Facil</label>
+
+                                                        <input type="radio" class="btn-check" name="options" id="btn-medio" autocomplete="off">
+                                                        <label class="btn btn-primary" for="btn-medio">Medio</label>
+
+                                                        <input type="radio" class="btn-check" name="options" id="btn-dificil" autocomplete="off">
+                                                        <label class="btn btn-primary" for="btn-dificil">Dificil</label>
+
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-6">
+                                                        <h6>Selecionar o Modelo</h6>
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Selecione</option>
+                                                            <option value="m1">Modelo 1</option>
+                                                            <option value="m2">Modelo 2</option>
+                                                            <option value="m3">Modelo 3</option>
+                                                            <option value="m4">Modelo 4</option>
+                                                            <option value="m5">Modelo 5</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <hr>
+                                                <input type="submit" class="btn btn-primary px-5" for="#criarlicaoFomr" value="Criar"></input>
+                                                
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim do modal de criar lições -->
+
+                            
+
+                        </div>
+                        
+                        <!-- Início do modal selecionar liçao-->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> <b>Português</b></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3 text-center">
+                                                <label for="recipient-name" class="col-form-label"><h2><b></b>Descrição</h2></label>
+                                            
+                                            </div>
+                                            <div class="mb-3 text-center">
+                                                <label for="message-text" class="col-form-label border border-black p-2 mb-2 form-control"><h5>Lição de português .</h5></label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label"><h5><b>Observação:</b></h5></label>
+                                                <label for="message-text" class="col-form-label border border-black p-2 mb-2 form-control text-center"><h6>Esta lição ainda não/foi finalizada.</h6></label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Modelos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <label for="recipient-name" class="col-form-label"><h2><b></b>Selecione um modelo</h2></label>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="card text-center pt-1">
+                                            <div class="card-body text-center pt-2 pb-2">
+                                                <form class="text-center pt-3 pb-3">
+                                                    <div class="form-group pt-3">
+                                                        <div class="col-12 col-2 ps-lg-0 pt-2 pt-lg-0">
+                                                            <input type="submit" value="modelo_1" class="form-control text-white" style="background-color: rgb(0, 23, 65);">
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div class="form-group pt-3">
+                                                        <div class="col-12 col-2 ps-lg-0 pt-2 pt-lg-0">
+                                                            <input type="submit" value="modelo_2" class="form-control text-white" style="background-color: rgb(0, 23, 65);">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group pt-3">
+                                                        <div class="col-12 col-2 ps-lg-0 pt-2 pt-lg-0">
+                                                            <input type="submit" value="modelo_3" class="form-control text-white" style="background-color: rgb(0, 23, 65);">
+                                                        </div>
+                                                    </div>                                                
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Voltar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                    
+                        <!-- fim do modal selecionar lição-->
+
+                        
+                        <!-- Início dos Cards de selecionar lição-->
+                        <div class="col-3 pt-5 bg-primary pb-5"> 
+                                <button type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                    <div class="card text-dark bg-danger botaocardG">
+                                        
+                                        <div class="card-body p-1 p-lg-3">
+                                        <h5 class="card-title text-center fs-cardP">Lição 1</h5>
+            
+                                            <div class="esconderP">
+                                                <hr>
+                                                <p class="card-text text-center">Utilize varios recursos e crie sua propia lição</p>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </button>
+
+                                <button   on type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">   
+                                    <div class="card text-dark bg-warning botaocardG">
+                                        <div class="card-body p-1 p-lg-3">
+                                        <h5 class="card-title text-center fs-cardP">Lição 2</h5>
+            
+                                            <div class="esconderP">
+                                        <hr>
+                                        <p class="card-text text-center">Utilize varios recursos e crie sua propia lição</p>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </button>
+
+                                <button type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">   
+                                    <div class="card text-dark botaocardG" style="background-color: rgb(0, 23, 65);">
+                                        <div class="card-body p-1 p-lg-3">
+                                        <h5 class="card-title text-center fs-cardP text-white">Lição 3</h5>
+            
+                                            <div class="esconderP">
+                                        <hr>
+                                        <p class="card-text text-center text-white">Utilize varios recursos e crie sua propia lição</p>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </button>
+
+                                <button type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">   
+                                    <div class="card text-dark botaocardG bg-light">
+                                        <div class="card-body p-1 p-lg-3">
+                                        <h5 class="card-title text-center fs-cardP text-dark">Lição 4</h5>
+            
+                                            <div class="esconderP">
+                                        <hr>
+                                        <p class="card-text text-center text-black">Utilize varios recursos e crie sua propia lição</p>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </button>
+
+                        </div>
+
+                        <div class="col-3 pt-5 bg-primary">
+                            <button type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">   
+                                <div class="card text-dark botaocardG" style="background-color: rgb(0, 23, 65);">
+                                    <div class="card-body p-1 p-lg-3">
+                                    <h5 class="card-title text-center fs-cardP text-white">Lição 5</h5>
+        
+                                        <div class="esconderP">
+                                    <hr>
+                                    <p class="card-text text-center text-white">Utilize varios recursos e crie sua propia lição</p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">   
+                                <div class="card text-dark bg-light  botaocardG">
+                                    <div class="card-body p-1 p-lg-3">
+                                    <h5 class="card-title text-center fs-cardP">Lição 6</h5>
+        
+                                        <div class="esconderP">
+                                    <hr>
+                                    <p class="card-text text-center">Utilize varios recursos e crie sua propia lição</p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">   
+                                <div class="card text-dark bg-warning botaocardG">
+                                    <div class="card-body p-1 p-lg-3">
+                                    <h5 class="card-title text-center fs-cardP">Lição 7</h5>
+        
+                                        <div class="esconderP">
+                                    <hr>
+                                    <p class="card-text text-center">Utilize varios recursos e crie sua propia lição</p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button type="button" class="btn btn-default botaocardP" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">   
+                                <div class="card text-dark botaocardG bg-danger">
+                                    <div class="card-body p-1 p-lg-3">
+                                    <h5 class="card-title text-center fs-cardP text-white">Lição 8</h5>
+        
+                                        <div class="esconderP">
+                                    <hr>
+                                    <p class="card-text text-center text-white">Utilize varios recursos e crie sua propia lição</p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div> 
+                        <!--Fim dos cards de selecionar lição-->    
+
+                        
+                    </div> <!-- Fim do conteúdo de selecionar lição-->
+
+
+                    <!--inicio do modal de configurações-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h2 class="modal-title fs-5" id="exampleModalLabel"> <b class="text-center">Configurações</b></h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="card text-center pt-1">
+                                            <div class="card-body text-center pt-2 pb-2">
+                                                <form class="text-center pt-3 pb-3">
+                                                    <div class="form-group pt-3">
+                                                        <div class="col-12 col-2 ps-lg-0 pt-2 pt-lg-0">
+                                                            <input type="submit" value="Alterar icone" class="form-control text-white" style="background-color: rgb(0, 23, 65);">
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div class="form-group pt-3">
+                                                        <div class="col-12 col-2 ps-lg-0 pt-2 pt-lg-0">
+                                                            <input type="submit" value="Alterar icone" class="form-control text-white" style="background-color: rgb(0, 23, 65);">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group pt-3">
+                                                        <div class="col-12 col-2 ps-lg-0 pt-2 pt-lg-0">
+                                                            <input type="submit" value="Alterar icone" class="form-control text-white" style="background-color: rgb(0, 23, 65);">
+                                                        </div>
+                                                    </div>                                                
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">salvar</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fim do modal de configurações-->
+
+                </div> <!--Fim do conteúdo principal-->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Início do rodapé-->
+    <footer class="py-3 border-top border-dark border-2 bg-light" id="rodape">
+
+        <h5 class="text-center">Tabajara inc</h5>
+        <h6 class="text-center">Todos os direitos reservados</h6>
+
+    </footer>
+    <!--Fim do rodapé-->
+    
+</body>
+</html>
+    </section>
+    
+</body>
+</html>

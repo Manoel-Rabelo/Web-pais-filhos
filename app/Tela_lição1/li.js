@@ -48,8 +48,10 @@ function criarPergunta (data) {
      }else {
 
         const proximaPerguntaArea = document.querySelector('#btn-proxima');
-        const proximaPergunta = criarElementos(proximaPerguntaArea, 'button', 'Proxima', 'proxima-pergunta');
+        const proximaPergunta = criarElementos(proximaPerguntaArea, 'img', '', 'proxima-pergunta');
 
+        proximaPergunta.setAttribute("src", "./../../assets/img/pontoSVG/btn-rainbow-teste.svg")
+        
         //Função apagar
         proximaPergunta.onclick = () => {
             obj.remove();
@@ -63,8 +65,6 @@ function criarPergunta (data) {
         //msg.textContent = `Pergunta ${data.cont} de ${data.total}`;
         msg.innerHTML = `<span id="tx1">Pergunta <span id="tx2">${data.cont}</span> de <span id="tx3">${data.total}</span> </span>`;
         
-        if(data.q.length == 0) proximaPergunta.textContent = 'Fim';
-
         outputQuestao(pergunta, obj, proximaPergunta);
      }
 }
@@ -94,7 +94,7 @@ function outputQuestao(pergunta, parent) {
 
         botaoOpcoes.onclick = () => {
             if (pergunta.resposta == e) {
-                document.getElementById("status-resposta").textContent = "Certo";
+                document.getElementById("status-resposta").textContent = "Você Acertou!";
 
                 modal.style.display = "block";
                 
