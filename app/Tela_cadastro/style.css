@@ -14,3 +14,21 @@
 
     bottom: 0%;
 }
+
+.bg-cinza {
+    background-image: url(./../../assets/img/pontoSVG/bg-cinza-cadastrar.svg);
+    background-size: cover;
+
+    border: 3px solid gray;
+    border-radius: 2rem;
+}
+
+.bg-cad {
+    background-color: white;
+    
+    color: darkblue;
+}
+
+.br-cinza {
+    border: 2px solid gray;
+}

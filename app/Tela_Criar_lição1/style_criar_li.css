@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Colus;
+    src: url(./../../assets/fonts/Colus/Colus/Commercial/OTF/Colus-Regular.otf);
+}
+
+@font-face {
+    font-family: Grenze;
+    src: url(./../../assets/fonts/Grenze/Grenze/otf/Grenze-Regular.otf);
+}
+
+.bg-fundo {
+    background-image: url(./../../assets/img/pontoSVG/tela-inicial-filhon-fundo.svg);
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    z-index: -1000;
+}
+
+.bg-terra {
+    position: absolute;
+
+    width: 100%;
+
+    bottom: 0%;
+
+    z-index: -1000;
+}
+
+.bg-sol {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1001;
+}
+

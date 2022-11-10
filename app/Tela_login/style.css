@@ -16,21 +16,27 @@ body {
 
 }
 
-.card{
-    margin-top: 5%;
-    border-radius: 2%;
-    border: 2px solid;
-    
-}
-legend{
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(247, 245, 131);
-}
-
 .rodape {
     position: absolute;
     width: 100%;
 
     bottom: 0%;
+}
+
+.bg-cinza {
+    background-image: url(./../../assets/img/pontoSVG/bg-cinza-cadastrar.svg);
+    background-size: cover;
+
+    border: 3px solid gray;
+    border-radius: 2rem;
+}
+
+.bg-cad {
+    background-color: white;
+    
+    color: darkblue;
+}
+
+.br-cinza {
+    border: 2px solid gray;
 }
