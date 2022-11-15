@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.0/dist/sweetalert2.all.js"></script>
 </head>
 
 <body>
-
+    <script src="./../../assets/js/jquery.js"></script>
     <div class="container-fluid bg-fundo">
 
         <section>
 
-            <!--Corpo do form-->
+            <!-- Corpo do form -->
             <div class="container py-2">
 
             <div class="row justify-content-center">
@@ -30,26 +29,26 @@
                         <h5 class="d-inline-flex bg-cad br-cinza px-4 px-lg-3 py-1 rounded-pill fs-6 fw-bold">FAÇA SEU CADASTRO </h5>
                     </div>
 
-                    <form action="#" method="post">
+                    <form id="myForm" method="post">
 
                         <div class="mb-3">
                             <label for="nome1" class="form-label fw-bold">Nome de usuario*</label>
-                            <input type="text" id="nome1" class="form-control br-cinza">
+                            <input type="text" name="name" class="form-control br-cinza" minlength="3">
                         </div>
 
                         <div class="mb-3">
                             <label for="email1" class="form-label fw-bold">Email*</label>
-                            <input type="email" id="email1" class="form-control">
+                            <input type="email" name="email" class="form-control" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="pass1" class="form-label fw-bold">Senha*</label>
-                            <input type="password" id="pass1" class="form-control">
+                            <input type="password" name="senha"  class="form-control" minlength="8" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="pass1" class="form-label fw-bold">Confirme a Senha*</label>
-                            <input type="password" id="pass1" class="form-control">
+                            <input type="password" class="form-control" >
                         </div>
 
                         <div class="mb-3 text-center">
@@ -88,7 +87,7 @@
 
     </div>
 
-    <footer class="rodape">
+    <footer class="rodape" hidden>
 
         <div class="container-fluid border-top border-dark border-3 bg-light">
 
@@ -111,6 +110,31 @@
         </div>
 
     </footer>
-    
+
+    <script>
+        $('#myForm').on('submit', function (e) {
+            let form = "myForm"
+            e.preventDefault();
+            $.ajax({
+                data: $('#' + form).serialize(),
+                url: "http://localhost:3333/cadastrar",
+                method: "post",
+            }).done((response)=>{
+                Swal.fire({
+                    icon:'success',
+                    title: response.mensagem,
+                }).then(() => {
+                    document.location.href = '../Tela_login/login.html'
+                });
+            }).fail(function (data) {
+                console.log(data)
+                Swal.fire({
+                    icon:'error',
+                    title: data.responseJSON.mensagem,
+                });
+            })
+        })
+
+    </script>
 </body>
 </html>
