@@ -1,165 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <title>Relatório</title>
+    <title>Pais & Filhos</title>
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style_tr.css">
+
+
 </head>
+
 <body>
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="../../assets/js/bootstrap.js"></script>
 
-    <div class="row gx-0">
+    <script src="./../../assets/js/jquery.js"></script>
+    <script src="./../../assets/js/bootstrap.min.js"></script>
 
-        <div class="col-2 bg-primary">
+    <script>
 
-            <div class="">
-                <a class="" href="#">
-                    <img src="/assets/img/Logo_paisFilhos_pequena.svg" class="img-fluid p-2" alt="" width="120">
-                </a>
-            </div>
+        $(document).ready(function(){
+            $(".mostrarBL").click(function() {
+                $("#barraLateral").toggleClass("collapsed");
+            });
+        });
 
-            <ul class="flex-column" style="height: 100vh; list-style: none;">
+    </script>
 
-                <li class="botao">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="it1 it2 it3 it4 it5 it6"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-bar-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
-                      </svg></button>
-                </li>
+    <header class="barraSup">
 
-                <li class="align-self-center collapse multi-collapse" id="it1">
-                    <div class="fotoPerfil bg-light rounded-circle mt-4" style="height: 6rem; width: 6rem;">
-                    </div>
-                </li>
- 
-                <li class="align-self-center collapse multi-collapse" id="it2">
-                    <div class="d-flex nomePerfil mt-4 bg-light rounded-pill px-4" style="max-height: 30px;">
-                        <p class="mb-0">Tabajara</p>
-                    </div>
-                </li>
+        <div class="container-fluid">
 
-                <li class="align-self-center collapse multi-collapse" id="it3">
-                    <div class="emailPerfil mt-4 bg-light rounded-pill px-4" style="max-height: 30px;">
-                        <p class="mb-0">tabajara.tech@gmail.com</p>
-                    </div>
-                </li>
+        <div class="row bg-warning">
 
-                <li class="align-self-center collapse multi-collapse" id="it4">
-                    <div class="perfil mt-4 rounded-3 px-4 btn btn-secondary w-75 " style="max-height: 40px;">
-                        <p class="mb-0">Perfil</p>
-                    </div>
-                </li>
+            <!-- Botão de menu -->
+            <div class="col-4 d-block d-lg-none text-center align-self-center">
 
-                <li class="align-self-center collapse multi-collapse" id="it5">
-                    <div class="addFilho mt-4 rounded-3 px-4 btn btn-secondary w-75" style="max-height: 40px;">
-                        <p class="mb-0">+ Filho</p>
-                    </div>
-                </li>
-
-                <li class="nav-item align-self-center collapse multi-collapse" id="it6">
-                    <div class="jogar mt-4 rounded-3 px-4 btn btn-secondary w-75" style="max-height: 40px;">
-                        <p class="mb-0">Jogar</p>
-                    </div>
-                </li>
-
-            </ul>
-
-        </div>
-        <div class="col-10">
-            
-
-            <div class="d-flex flex-row  py-2 bg-primary pe-5 pt-4">
-                <div class="justify-content-start">
-                    <H5><a>Pagina Principal</a></H5>
-                </div>
-                <div class="justify-content-start offset-md-1">
-                    <H5><a>Temas</a></H5>
-                </div>
-                <div class="bVoltar btn text-white py-2 offset-md-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-                  </svg>
-                </div>
-                <div class="pagAtual px-3"><p class="mb-0 py-2">Pagina Principal</p></div>
-                <div class="bVoltarTudo btn text-white py-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                </div>
-            </div>
-
-            <div class="d-flex row  my-3 mx-1 mx-lg-0 container">
-
-
-                <div class=" offset-md-1 col-2 justify-content-start">
-                    <div class=" btn bg-warning w-55 h-30 m-0" style="border-radius: 1rem;">
-                        <p class="align-center">Relatórios</p>
-                    </div>
-                </div>
-
-                <div class="col-2  ">
-                    <div class="w-55 w-lg-50 h-30 mx-auto d-flex flex-column" style="border-radius: 1rem;">
-                        <select class="form-select bg-warning" > 
-                            <option selected>Selecionar</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-2 ">
-                    <div class=" w-55 w-lg-50 h-30 mx-auto d-flex flex-column" style="border-radius: 1rem;">
-                        <select class="form-select bg-warning" > 
-                            <option selected>Selecionar Mat</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-2 ">
-                    <div class=" w-55 w-lg-50 h-30 mx-auto d-flex flex-column" style="border-radius: 1rem;">
-                        <select class="form-select bg-warning" > 
-                            <option selected>Esta semana</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-2 ">
-                    <div class=" w-55 w-lg-50 h-30 mx-auto d-flex flex-column" style="border-radius: 1rem;">
-                        <select class="form-select bg-warning" > 
-                            <option selected>Esta semana</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-
-              
+                <button type="button" class="btn btn-secondary mostrarBL">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                    </span>
+                </button>
 
             </div>
-     
-            
 
-            <div class="d-flex flex-rowm mx-lg-5 mx-1 mt-1">
+            <!-- Logo -->
+            <div class="col-8 col-lg-3 text-lg-center">
+                <img src="/assets/img/Logo_paisFilhos_pequena.svg" class="logo img-fluid" alt="">
+            </div>
 
-                <div class="col-3">
-                    <div>
-                        <img src="/assets/img/y4f5_mgd0_191011.jpg" >
-                    </div>
+            <!-- paginação tela grande -->
+            <div class="col-lg-9 d-none d-lg-block">
 
-                </div>
+                <div class="row justify-content-end py-lg-3">
 
+                    <div class="col-6 btn-group" role="group">
 
-                <div class="col-8 offset-md-1">
-                    
-                    <div class=" bg-primary" style="height: 80vh;">
+                        <button class="btn btn-secondary">
+                            <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </span>
+                        </button>
+
+                        <button class="btn btn-secondary" disabled style="opacity: 1;">Página principal</button>
+
+                        <button class="btn btn-secondary">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
+                        </button>
 
                     </div>
 
@@ -168,6 +83,134 @@
             </div>
 
         </div>
+
+        </div>
+
+    </header>
+
+    <section class="main-content">
+
+        <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- Barra Lateral -->
+            <div class="col-lg-3 collapsed" id="barraLateral">
+                
+                <div class="row">
+
+                    <div class="col-12 bg-warning blsize">
+
+                        <div class="row d-flex flex-column">
+
+                            <div class="img-perfil bg-light rounded-circle mt-3 align-self-center" style="height: 6rem; width: 6rem;">
+            
+                            </div>
+
+                            <div class="nome-user bg-white mt-3 align-self-center w-75 rounded-3 border border-dark">
+                                <p class="py-2 px-4 mb-0 text-center">Tabajara</p>
+                            </div>
+
+                            <div class="email-user bg-white mt-3 align-self-center w-75 rounded-3 border border-dark">
+                                <p class=" py-2 px-4 mb-0 text-center">tabajara.tech@gmail.com</p>
+                            </div>
+
+                            <div class="config-perfil mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">Perfil</button>
+                            </div>
+
+                            <div class="add-filho mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">+ Filho</button>
+                            </div>
+
+                            <div class="start-play mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">jogar</button>
+                            </div>
+
+                            <div class="config-config mt-3 align-self-center w-75">
+                                <button type="button" class="btn btn-danger w-100">configurações</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Conteudo principal -->
+            <div class="col-12 col-lg-9">
+
+                <!-- Inicio Paginação de tela pequena -->
+                <div class="esconderG">
+
+                <div class="row justify-content-center pt-3">
+
+                    <div class="col-10 btn-group" role="group">
+
+                        <button class="btn btn-secondary">
+                            <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </span>
+                        </button>
+
+                        <button class="btn btn-secondary" disabled style="opacity: 1;">Página principal</button>
+
+                        <button class="btn btn-secondary">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                </div>
+                <!-- Fim Paginação de tela pequena -->
+
+                <!-- Conteudo Relaotio-->
+                <div class="row pt-3 pt-lg-5">
+
+                    <!-- Medidor de desenpenho -->
+                    <div class="col-2 bg-danger" style="height: 80vh;">
+
+                    </div>
+                    <!-- Fim -->
+
+                    <!-- Graficos -->
+                    <div class="col-10 bg-info" style="height: 80vh;">
+                         
+                        <canvas id="myChart" class="p-4"></canvas>
+                        
+                    </div>
+                    <!-- Fim -->
+                </div>
+                <!-- Fim -->
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <footer class="py-3 border-top border-dark border-2 bg-light" id="rodape">
+
+        <h5 class="text-center">Tabajara inc</h5>
+        <h6 class="text-center">Todos os direitos reservados</h6>
+
+    </footer>
+
+    <script src="./../../assets/js/chart.min.js"></script>
+    <script src="./script_tr.js"></script>
     
 </body>
 </html>

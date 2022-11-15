@@ -113,14 +113,14 @@
                 method: "post",
               })
                 .done(() => {
-                  document.location.href = "/criar_licao";
+                  document.location.href = "../Tela_Seleção de perfil/tp.html";
                 })
-                .fail(() => {
-                  Swal.fire("Usuario ou senha Incorreta");
+                .fail((data) => {
+                  Swal.fire(data.responseJSON.mensagem);
                 });
             });
 
-            
+
           </script>
     </div>
     
