@@ -5,7 +5,10 @@
 body {
     margin: 0;
 }
-
+a {
+    text-decoration: none !important;
+    
+}
 .bg-fundo-mar {
     background-image: url(./../../assets/img/pontoSVG/bg-fundo-mar2.svg);
     background-repeat: no-repeat;

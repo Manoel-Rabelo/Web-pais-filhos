@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./tpStyle.css" />
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css" />
   </head>
+
   <body>
+    <script src="../../assets/js/jquery.js"></script>
     <section>
       <div class="bg-fundo-mar">
         <div
@@ -20,37 +22,52 @@
         </div>
 
         <div class="container mt-5">
-          <div class="row justify-content-center">
-           
-            <div class="d-flex col-2 d-flex flex-column text-center">
-                <a href="../Tela_inicial_pai/home_pai.html">  <div
-                class="div bg-white border border-dark rounded-circle m-auto mb-2"
-                style="width: 150px; height: 150px"
-              ></div>
-              <div class="nuser">
-                <p class="m-0">Jackson</p>
-              </div>
-              <div class="tuser">
-                <p class="m-0">Pai</p>
-              </div>
-            </a>
-            </div> 
+          <div id="listaDePerfils" class="row justify-content-center">
+            <script>
+              function validarTipo(tipo) {
+                if (tipo > 0) {
+                  return true;
+                }
+                return false;
+              }
+              $(function () {
+                $.ajax({
+                  url: `http:/localhost:3333/user/cla9tiu3m0000to4wdqvtamz8`,
+                  method: "GET",
+                })
+                  .done((data) => {
+                    for (i = 0; i < data.length; i++) {
+                      var perfil =
+                        ' <div id="perfil" class="d-flex col-2 d-flex flex-column text-center">';
+                      if (validarTipo(data[i].tipo)) {
+                        perfil +=
+                          '<a href="../Tela_inicial_pai/home_pai.html">';
+                      } else {
+                        perfil += '<a href="../Tela_modo filho/index.html">';
+                      }
+                      perfil +=
+                        '<div class="div bg-info border border-dark rounded-circle m-auto mb-2" style="width: 150px; height: 150px"></div>';
 
-            <div
-              class="d-flex col-2 justify-content-center d-flex flex-column text-center"
-            >
-            <a href="../Tela_modo filho/index.html"><div
-                class="div bg-white border border-dark rounded-circle m-auto mb-2"
-                style="width: 150px; height: 150px"
-              ></div>
-              <div class="nuser">
-                <p class="m-0">Nicolas</p>
-              </div>
-              <div class="tuser">
-                <p class="m-0">Filho</p>
-              </div>
-            </a> 
-            </div>
+                      perfil += '<div class="nuser bg-white rounded">';
+                      perfil += `<p class="m-0 text-dark    fw-bold">${data[i].nome}</p>`;
+                      perfil += "</div>";
+                      perfil += '<div class="tuser">';
+                      perfil += `<p class="m-0">${
+                        data[i].tipo > 0 ? "Pai" : "Filho"
+                      }</p>`;
+                      perfil += "</div>";
+                      perfil += "</a>";
+                      perfil += "</div>";
+
+                      $("#listaDePerfils").append(perfil);
+                    }
+                    return;
+                  })
+                  .fail((data) => {
+                    console.log(data);
+                  });
+              });
+            </script>
           </div>
         </div>
       </div>

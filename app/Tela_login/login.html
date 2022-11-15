@@ -112,7 +112,8 @@
                 url: "http:/localhost:3333/login",
                 method: "post",
               })
-                .done(() => {
+                .done((data) => {
+                    
                   document.location.href = "../Tela_Seleção de perfil/tp.html";
                 })
                 .fail((data) => {
