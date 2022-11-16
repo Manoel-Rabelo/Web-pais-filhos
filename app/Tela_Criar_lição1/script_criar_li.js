@@ -1,5 +1,7 @@
 const btnProxima = document.getElementById("btn-proxima");
-console.log(btnProxima);
+
+const btnAnterior = document.getElementById("btn-anterior");
+
 
 const q1 = document.getElementById("q1");
 const q2 = document.getElementById("q2");
@@ -57,11 +59,6 @@ btnProxima.onclick = () => {
         q9.style.display = '';
     }
 
-    if (btncont == 8){
-        q9.style.display = 'none';
-        q10.style.display = '';
-    }
-
     btncont++;
 
     if (btncont >= 8) {
@@ -69,8 +66,68 @@ btnProxima.onclick = () => {
         alert ("numero maximo de questões alcançado!")
     }
     console.log(btncont);
+
+    if (btncont == 8){
+        q9.style.display = 'none';
+        q10.style.display = '';
+    }
 };
 
+btnAnterior.onclick = () => {
+
+    if (btncont == 8){
+        q10.style.display = 'none';
+        q9.style.display = '';
+    }
+
+    if (btncont == 7){
+        q9.style.display = 'none';
+        q8.style.display = '';
+    }
+
+    if (btncont == 6){
+        q8.style.display = 'none';
+        q7.style.display = '';
+    }
+
+    if (btncont == 5){
+        q7.style.display = 'none';
+        q6.style.display = '';
+    }
+
+    if (btncont == 4){
+        q6.style.display = 'none';
+        q5.style.display = '';
+    }
+
+    if (btncont == 3){
+        q5.style.display = 'none';
+        q4.style.display = '';
+    }
+
+    if (btncont == 2){
+        q4.style.display = 'none';
+        q3.style.display = '';
+    }
+
+    if (btncont == 1){
+        q3.style.display = 'none';
+        q2.style.display = '';
+    }
+
+    btncont --;
+
+    if (btncont <= 0) {
+        btncont = 0;
+        alert ("Você já está no Inicio1")
+    }
+    console.log(btncont);
+
+    if (btncont == 0){
+        q2.style.display = 'none';
+        q1.style.display = '';
+    }
+};
 
 const enu1 = document.querySelector("#enunciado1");
 const img1 = document.querySelector("#imagem1");
