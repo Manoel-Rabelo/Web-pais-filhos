@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
    
     <title>Login</title>
- 
+    <script src="../auth.js"></script>
    
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.0/dist/sweetalert2.all.js"></script>
-    <script src="./../../assets/js/jquery.js"></script>
+    <!-- <script src="./../../assets/js/jquery.js"></script> -->
     <script src="./../../assets/js/bootstrap.bundle.min.js"></script>
     
 
@@ -104,19 +105,22 @@
         </footer>
             
         <script>
+            // requisição para validar o login do usuário
             $("#myForm").on("submit", function (e) {
               let form = "myForm";
               e.preventDefault();
               $.ajax({
                 data: $("#" + form).serialize(),
-                url: "http:/localhost:3333/login",
+                url: "http://localhost:3333/login",
                 method: "post",
               })
                 .done((data) => {
-                    
-                  document.location.href = "../Tela_Seleção de perfil/tp.html";
+                    // caso o crendecias seja validas, será redirecionado para tela de perfil
+                    sessionStorage.setItem("id",data.id);
+                    document.location.href = "../Tela_Seleção de perfil/tp.html";
                 })
                 .fail((data) => {
+                    // mensagem de erro caso o as usuário não seja invalido
                   Swal.fire(data.responseJSON.mensagem);
                 });
             });
