@@ -174,6 +174,12 @@ body {
     grid-row-end: 3;
 }
 
+.q-img > img {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
 .q-opcoes {
     background-image: url(./../../assets/img/pontoSVG/blue-texture1.svg);
     background-size: cover;
@@ -383,3 +389,122 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .bg-status-certo {
+    background-image: url(./../../assets/img/pontoSVG/bg-status-resposta-certo.svg);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 210px;
+  }
+
+  .bg-status-errado {
+    background-image: url(./../../assets/img/pontoSVG/bg-status-resposta-errado.svg);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 210px;
+  }
+
+  @media (min-width: 992px) {
+
+    .modal-conteudo {
+        width: 500px;
+        height: 600px;
+    
+        margin:auto;
+    
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .bg-modal {
+        width: 100%;
+        max-width: 800px;
+    
+        background-image: url(./../../assets/img/pontoSVG/bg-fundo-modal-licao1.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    
+      .status-resposta {
+        width: 600px;
+        height: 200px;
+    
+        margin-top: 7rem;
+    
+        font-size: 2.5rem;
+        font-family: Colus;
+    
+        text-align: center;
+        align-self: center;
+      }
+    
+      .status-resposta > p {
+          padding-left: 9rem;
+          padding-right: 9rem;
+          padding-top: 1.5rem;
+          margin-bottom: 0%;
+      }
+    
+      .btnProxima {
+          display: flex;
+          justify-content: center;
+
+          margin-top: 1rem;
+      }
+    
+      .proxima-pergunta {
+          width: 150px;
+          height: 150px;
+      }
+    
+      .bg-btn-proximo {
+        width: 200px;
+        height: 200px;
+    
+        background-image: url(./../../assets/img/pontoSVG/btn-rainbow-teste.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+  }
+/* Innicio - Game Over */
+
+  .bg-gameOver {
+    background-image: url(./../../assets/img/pontoSVG/bg-gameover.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+
+    position: absolute;
+    z-index: 1100;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+  }
+
+  .msg-pontuacao {
+    margin-top: 25%;
+
+    font-size: 3rem;
+    padding-left: 32rem;
+    padding-right: 32rem;
+
+    color: black;
+  }
+
+  .btn-sair > a > img {
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+    top: 65%;
+    left: 72%;
+  }
+
+/* Fim */

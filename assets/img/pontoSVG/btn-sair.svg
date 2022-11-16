@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#1A1A1A;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Colus-Regular';}
+	.st3{font-size:40px;}
+</style>
+<radialGradient id="SVGID_1_" cx="100" cy="100" r="90" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FF0000"/>
+	<stop  offset="0.4967" style="stop-color:#FE0202"/>
+	<stop  offset="0.6756" style="stop-color:#FC0909"/>
+	<stop  offset="0.8031" style="stop-color:#F71414"/>
+	<stop  offset="0.9055" style="stop-color:#F12525"/>
+	<stop  offset="0.9928" style="stop-color:#E93B3B"/>
+	<stop  offset="1" style="stop-color:#E83D3D"/>
+</radialGradient>
+<circle class="st0" cx="100" cy="100" r="90"/>
+<text transform="matrix(1 0 0 1 54.5803 111.5302)" class="st1 st2 st3">SAIR</text>
+</svg>

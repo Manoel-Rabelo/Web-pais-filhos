@@ -9,8 +9,11 @@ const msg = criarElementos(localMsg, 'div', '', 'msg');
 
 // saida de dados
 const localQuestao = document.querySelector('#local-questao');
-
 const saidaQuestao = criarElementos(localQuestao, 'div', '', 'grid-principal');
+
+// Notificação fim de jogo
+const gameOverLocal = document.querySelector('#game-over');
+const gameRes = criarElementos(gameOverLocal, 'div', '', 'msg-pontuacao');
 
 // Marcador de Pontuação
 const game = { pontuacao: 0 }
@@ -44,13 +47,18 @@ function criarPergunta (data) {
      const obj = criarElementos(saidaQuestao, 'div', '', 'obj-questao');
 
      if (data.q.length == 0) {
-        msg.textContent = 'game over'; //mudar local da mensagem de gameover (retirar o comentario ao fazer!)
+
+        msg.style.display = "none";
+        gameOverLocal.style.display = "block";
+
+        gameRes.innerHTML = `Você Acertou ${game.pontuacao} de ${data.total} Questões!`
+
      }else {
 
         const proximaPerguntaArea = document.querySelector('#btn-proxima');
         const proximaPergunta = criarElementos(proximaPerguntaArea, 'img', '', 'proxima-pergunta');
 
-        proximaPergunta.setAttribute("src", "./../../assets/img/pontoSVG/btn-rainbow-teste.svg")
+        proximaPergunta.setAttribute("src", "./../../assets/img/pontoSVG/btn-rainbow.svg")
         
         //Função apagar
         proximaPergunta.onclick = () => {
@@ -58,6 +66,7 @@ function criarPergunta (data) {
             proximaPergunta.remove();
             criarPergunta(data);
             modal.style.display = "none";
+            document.getElementById("status-resposta").style.paddingTop = "1.5rem";
         }
 
         const pergunta = data.q.shift ();
@@ -79,6 +88,8 @@ function outputQuestao(pergunta, parent) {
     // Imagem
     const qImg = criarElementos(parent, 'div', '', 'q-img');
 
+    qImg.innerHTML = `<img src="${pergunta.imagem}">`;
+
     // Array com as alternativas
     const arr = pergunta.opcoes;
     arr.push(pergunta.resposta);
@@ -96,12 +107,22 @@ function outputQuestao(pergunta, parent) {
             if (pergunta.resposta == e) {
                 document.getElementById("status-resposta").textContent = "Você Acertou!";
 
+                let bgStCerto = document.getElementById("status-resposta").classList;
+                bgStCerto.remove("bg-status-errado");
+                bgStCerto.add("bg-status-certo");
+                
                 modal.style.display = "block";
                 
                 game.pontuacao++;
             }else {
 
                 document.getElementById("status-resposta").textContent = "Errado";
+
+                document.getElementById("status-resposta").style.paddingTop = "4rem";
+
+                let bgStCerto = document.getElementById("status-resposta").classList;
+                bgStCerto.remove("bg-status-certo");
+                bgStCerto.add("bg-status-errado");
 
                 modal.style.display = "block";
             }

@@ -1,6 +1,7 @@
 [
     {
         "pergunta": "Qual é a cor da CasaAzul",
+        "imagem": "./img/CasaAzul.png",
         "resposta": "Amarelo",
         "opcoes": [
             "Azul",
@@ -11,6 +12,7 @@
 
     {
         "pergunta": "Qual é a cor da CarroVermelho",
+        "imagem": "./img/CasaAzul.png",
         "resposta": "Verde",
         "opcoes": [
             "Vermelho",

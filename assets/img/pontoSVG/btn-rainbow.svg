@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1A1A1A;}
+	.st1{fill:#EA4754;}
+	.st2{fill:#EC6725;}
+	.st3{fill:#F9B124;}
+	.st4{fill:#00A29A;}
+	.st5{fill:#0072BA;}
+	.st6{fill:#6A4E9B;}
+</style>
+<circle class="st0" cx="100" cy="100" r="95"/>
+<circle cx="100" cy="100" r="90"/>
+<g>
+	<path class="st1" d="M167.08,40H32.92C49.39,21.59,73.34,10,100,10S150.61,21.59,167.08,40z"/>
+	<path class="st2" d="M184.87,70H15.13c3.94-11.18,10.04-21.35,17.79-30h134.16C174.83,48.65,180.93,58.82,184.87,70z"/>
+	<path class="st3" d="M190,100H10c0-10.52,1.8-20.62,5.13-30h169.74C188.2,79.38,190,89.48,190,100z"/>
+	<path class="st4" d="M190,100c0,10.52-1.8,20.62-5.13,30H15.13C11.8,120.62,10,110.52,10,100H190z"/>
+	<path class="st5" d="M184.87,130c-3.94,11.18-10.04,21.35-17.79,30H32.92c-7.75-8.65-13.85-18.82-17.79-30H184.87z"/>
+	<path class="st6" d="M167.08,160c-16.47,18.41-40.42,30-67.08,30s-50.61-11.59-67.08-30H167.08z"/>
+</g>
+<path class="st0" d="M138.86,106.46l-50.09,28.92c-4.97,2.87-11.19-0.72-11.19-6.46V71.08c0-5.74,6.22-9.33,11.19-6.46l50.09,28.92
+	C143.83,96.41,143.83,103.59,138.86,106.46z"/>
+</svg>
