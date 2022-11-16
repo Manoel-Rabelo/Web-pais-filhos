@@ -328,8 +328,9 @@
                                   id="btn-dificil"
                                   autocomplete="off"
                                 />
-                                
-                                <label class="btn btn-primary" for="btn-dificil">Dificil</label
+
+                                <label class="btn btn-primary" for="btn-dificil"
+                                  >Dificil</label
                                 >
                               </div>
                             </div>
@@ -367,10 +368,19 @@
                 </div>
                 <script>
                   $("form").submit(function (e) {
-                    e.preventDefault(); // array para guardar os valores
+                    // array para guardar os valores
                     let dados = $("form").serialize();
-                    console.log(dados);
-                    e.p;
+                    e.preventDefault();
+                    $.ajax({
+                      data: dados,
+                      url: `http://localhost:3333/user/${sessionStorage.id}`,
+                      method: "get",
+                    })
+                      .done((d) => {})
+                      .fail((d) => {
+                        console.log(d);
+                        return;
+                      });
                   });
                 </script>
                 <!-- Fim -->
@@ -393,6 +403,7 @@
                     <div class="row justify-content-center py-2">
                       <div class="col-11 btn btn-warning rounded-3">
                         <div class="d-flex flex-row p-1">
+                          <!-- <script> -->
                           <div class="col-8 nomeDescricao pt-2 text-start">
                             <h6 class="mb-0">Nome da Lição</h6>
                             <hr class="mt-0" />
@@ -426,6 +437,7 @@
                               </div>
                             </div>
                           </div>
+                          <!-- </script> -->
                         </div>
                       </div>
                     </div>
