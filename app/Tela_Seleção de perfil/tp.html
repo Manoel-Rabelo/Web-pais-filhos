@@ -11,72 +11,64 @@
   </head>
 
   <body>
-    
     <script src="../../assets/js/bootstrap.js"></script>
     <script src="../../assets/js/jquery.js"></script>
-    
-      <main class="bg-fundo-mar">
-        <div
-          class="container bg-light mt-3 text-center py-2 border border-2 border-warning"
-          style="border-radius: 0.8rem"
-        >
-          <h4>Selecione um Perfil</h4>
-        </div>
-        <div class="container mt-5">
-          <div id="listaDePerfils" class="row justify-content-center">
-            <script>
-              function validarTipo(tipo) {
-                if (tipo > 0) {
-                  return true;
-                }
-                return false;
+
+    <main class="bg-fundo-mar">
+      <div
+        class="container bg-light mt-3 text-center py-2 border border-2 border-warning"
+        style="border-radius: 0.8rem"
+      >
+        <h4>Selecione um Perfil</h4>
+      </div>
+      <div class="container mt-5">
+        <div id="listaDePerfils" class="row justify-content-center">
+          <script>
+            function validarTipo(tipo) {
+              if (tipo > 0) {
+                return true;
               }
-              $(function () {
-                $.ajax({
-                  url: `http://localhost:3333/user/${sessionStorage.id}`,
-                  method: "GET",
-                })
-                  .done((data) => {
-                    // requisição feita no banco de dados referente aos perfis que o usuário possui
-                    for (i = 0; i < data.length; i++) {
-                      var perfil =
-                        ' <div id="perfil" class="d-flex col-2 d-flex flex-column text-center">';
-                      if (validarTipo(data[i].tipo)) {
-                        perfil +=
-                          '<a href="../Tela_inicial_pai/home_pai.html">';
-                      } else {
-                        perfil += '<a href="../Tela_modo filho/index.html">';
-                      }
-                      perfil +=
-                        '<div class="div bg-info border border-dark rounded-circle m-auto mb-2" style="width: 150px; height: 150px"><img class="m-auto mt-3 w-75"src="/assets/img/user.png"/></div>';
-                      perfil += '<div class="nuser bg-white rounded">';
-                      perfil += `<p class="m-0 text-dark    fw-bold">${data[i].nome}</p>`;
-                      perfil += "</div>";
-                      perfil += '<div class="tuser">';
-                      perfil += `<p class="m-0">${
-                        data[i].tipo > 0 ? "Pai" : "Filho"
-                      }</p>`;
-                      perfil += "</div>";
-                      perfil += "</a>";
-                      perfil += "</div>";
-
-                      $("#listaDePerfils").append(perfil);
+              return false;
+            }
+            $(function () {
+              $.ajax({
+                url: `http://localhost:3333/user/${sessionStorage.id}`,
+                method: "GET",
+              })
+                .done((data) => {
+                  // requisição feita no banco de dados referente aos perfis que o usuário possui
+                  for (i = 0; i < data.length; i++) {
+                    var perfil =
+                      ' <div id="perfil" class="d-flex col-2 d-flex flex-column text-center">';
+                    if (validarTipo(data[i].tipo)) {
+                      perfil += '<a href="../Tela_inicial_pai/home_pai.html">';
+                    } else {
+                      perfil += '<a href="../Tela_modo filho/index.html">';
                     }
-                    return;
-                  })
-                  .fail((data) => {
-                    console.log(data.responseJSON);
-                  });
-              });
-            </script>
-          </div>
-        </div>
-        <div>
-      </div>
-          </div>
-        </div>
-      </div>
+                    perfil +=
+                      '<div class="div bg-info border border-dark rounded-circle m-auto mb-2" style="width: 150px; height: 150px"><img class="m-auto mt-3 w-75"src="/assets/img/user.png"/></div>';
+                    perfil += '<div class="nuser bg-white rounded">';
+                    perfil += `<p class="m-0 text-dark    fw-bold">${data[i].nome}</p>`;
+                    perfil += "</div>";
+                    perfil += '<div class="tuser">';
+                    perfil += `<p class="m-0">${
+                      data[i].tipo > 0 ? "Pai" : "Filho"
+                    }</p>`;
+                    perfil += "</div>";
+                    perfil += "</a>";
+                    perfil += "</div>";
 
-    </main>>  
+                    $("#listaDePerfils").append(perfil);
+                  }
+                  return;
+                })
+                .fail((data) => {
+                  console.log(data.responseJSON);
+                });
+            });
+          </script>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
